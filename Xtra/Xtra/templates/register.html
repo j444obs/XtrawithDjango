@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="{{ static('css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ static('css/main.css') }}">
+    <script type="text/javascript" src="{{ static('js/vue-2.5.16.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/axios-0.18.0.min.js') }}"></script>
+</head>
+<body>
+    <div id="app">
+	<div class="register_con">
+		<div class="l_con fl">
+			<a href={{ url("contents:index") }} class="reg_logo"><img src={{ static("images/logo.jpg") }}
+            width="100px" height="100px"></a>
+            <div class="reg_slogan"></div>
+            <div class="reg_slogan">Developed By</div>
+            <div class="reg_slogan">WuYang DevOps Engineer</div>
+		</div>
+		<div class="r_con fr">
+			<div class="reg_title clearfix">
+				<h1>WebXtraBackup - Register</h1>
+				<a href={{ url("users:login") }}>Login</a>
+			</div>
+			<div class="reg_form clearfix">
+				<!-- 监听表单的递交事件 -->
+				<!-- v-cloak避免Vue变量未渲染完成先出现变量名的问题 -->
+				<form method="post" class="register_form" @submit="on_submit"  v-cloak>
+					<!-- post方法会做csrf认证 -->
+					<!-- {{ csrf_input }} 会生成隐藏input标签 -->
+                    {{ csrf_input }}
+					<ul>
+						<li>
+							<!-- 接收数据 v-model -->
+							<!-- 鼠标失去焦点事件@blur -->
+							<!-- 展示错误：v-show -->
+							<label>Username:</label>
+							<input type="text" v-model="username" @blur="check_username" name="username" id="user_name">
+							<span class="error_tip" v-show="error_name">[[ error_name_message ]]</span>
+						</li>
+						<li>
+							<label>Password:</label>
+							<input type="password" v-model="password" @blur="check_password" name="password" id="pwd">
+							<span class="error_tip" v-show="error_password">Please enter 8-20 digit password</span>
+						</li>
+						<li>
+							<label>Confirm:</label>
+							<input type="password" v-model="password2" @blur="check_password2" name="password2" id="cpwd">
+							<span class="error_tip" v-show="error_password2">Passwords entered twice are inconsistent</span>
+						</li>
+						<li>
+							<label>Captcha:</label>
+							<input type="text" v-model="image_code" @blur="check_image_code" name="image_code" id="pic_code" class="msg_input">
+							<img v-bind:src="image_code_url" @click="generate_image_code" alt="Captcha" class="pic_code">
+							<span class="error_tip" v-show="error_image_code">[[ error_image_code_message ]]</span>
+						</li>
+
+						<li class="agreement">
+							<input type="checkbox" v-model="allow" @change="check_allow" name="allow" id="allow">
+							<label>Accept the usage agreement</label>
+							<span class="error_tip" v-show="error_allow">Please tick the usage agreement</span>
+							{% if register_errmsg %}
+							<span class="error_tip">{{ register_errmsg }}</span>
+							{% endif %}
+						</li>
+						<li class="reg_sub">
+							<input type="submit" value="Register">
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="{{ static('js/common.js') }}"></script>
+    <script src="{{ static('js/register.js') }}"></script>
+</body>
+</html>

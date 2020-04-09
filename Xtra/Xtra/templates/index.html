@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Index</title>
+    <link rel="stylesheet" type="text/css" href="{{ static('css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ static('css/main.css') }}">
+    <script type="text/javascript" src="{{ static('js/jquery-1.12.4.min.js') }}"></script>
+	<script type="text/javascript" src="{{ static('js/vue-2.5.16.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/axios-0.18.0.min.js') }}"></script>
+</head>
+<body>
+	<div id="app">
+	<div class="header_con">
+		<div class="header">
+			<a href="{{ url('contents:index') }}" class="welcome fl">Index | </a>
+
+            <a class="login_btn fl">| Start Backup</a>
+			<div class="fr">
+              <div v-if="username" class="login_btn fl" v-cloak>
+					Welcome：<em>[[ username ]]</em>
+                        <span></span>
+					<a href="{{ url('users:logout') }}" class="quit">Sign out</a>
+				</div>
+                <div v-else class="login_btn fl">
+					    <a href={{ url("users:login") }}>Login</a>
+					    <span>|</span>
+					    <a href={{ url("users:register") }}>Register</a>
+                </div>
+			</div>
+		</div>
+	</div>
+        <br/>
+        <br/>
+    <table align="center" style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th width="200px" align="center" style="border: 1px solid black;">hostname</th>
+            <th width="200px" align="center" style="border: 1px solid black;">hostip</th>
+            <th width="200px" align="center" style="border: 1px solid black;">port</th>
+            <th width="200px" align="center" style="border: 1px solid black;">user</th>
+            <th width="200px" align="center" style="border: 1px solid black;">last_backup_time</th>
+            <th width="200px" align="center" style="border: 1px solid black;">last_backup_status</th>
+        </tr>
+        <tr>
+            <td align="center" style="border: 1px solid black;">test1</td>
+            <td align="center" style="border: 1px solid black;">192.168.18.6</td>
+            <td align="center" style="border: 1px solid black;">3306</td>
+            <td align="center" style="border: 1px solid black;">root</td>
+            <td align="center" style="border: 1px solid black;">20200409</td>
+            <td align="center" style="border: 1px solid black;">1</td>
+        </tr>
+    </table>
+
+
+	</div>
+
+    <script type="text/javascript" src="{{ static('js/common.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/slide.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/index.js') }}"></script>
+</body>
+</html>

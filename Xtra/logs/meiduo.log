@@ -1,1 +1,822 @@
 INFO 2020-04-09 00:49:41,010 basehttp 124 "GET / HTTP/1.1" 200 1716
+INFO 2020-04-09 01:54:36,760 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2020-04-09 01:54:40,574 basehttp 124 "GET / HTTP/1.1" 200 1716
+INFO 2020-04-09 02:02:29,802 basehttp 124 "GET /register HTTP/1.1" 301 0
+INFO 2020-04-09 02:02:29,828 basehttp 124 "GET /register/ HTTP/1.1" 200 326
+INFO 2020-04-09 02:02:29,842 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2020-04-09 02:02:29,865 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2020-04-09 02:26:16,089 basehttp 124 "GET /register/ HTTP/1.1" 200 4394
+INFO 2020-04-09 02:26:16,117 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-04-09 02:26:16,117 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-04-09 02:26:16,119 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+WARNING 2020-04-09 02:26:16,131 basehttp 124 "GET /static/js/register.js HTTP/1.1" 404 1655
+INFO 2020-04-09 02:26:16,150 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2020-04-09 02:26:16,177 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2020-04-09 02:26:16,180 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2020-04-09 02:26:16,185 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+WARNING 2020-04-09 02:26:16,227 basehttp 124 "GET /static/js/register.js HTTP/1.1" 404 1655
+INFO 2020-04-09 02:27:20,285 basehttp 124 "GET /register/ HTTP/1.1" 200 4394
+INFO 2020-04-09 02:27:20,308 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 8870
+WARNING 2020-04-09 02:27:20,362 base 152 Not Found: /image_codes/e5925af8-3506-4da7-b65d-e19197c72d60/
+WARNING 2020-04-09 02:27:20,363 basehttp 124 "GET /image_codes/e5925af8-3506-4da7-b65d-e19197c72d60/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:32:16,961 basehttp 124 "GET /register/ HTTP/1.1" 200 4388
+INFO 2020-04-09 02:32:16,978 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 200 15735
+WARNING 2020-04-09 02:32:17,025 base 152 Not Found: /image_codes/16058121-a52b-4c20-959b-9f13b600cc43/
+WARNING 2020-04-09 02:32:17,027 basehttp 124 "GET /image_codes/16058121-a52b-4c20-959b-9f13b600cc43/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:34:35,253 basehttp 124 "GET /register/ HTTP/1.1" 200 4413
+INFO 2020-04-09 02:34:35,281 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:34:35,574 base 152 Not Found: /image_codes/7fca9e88-8042-4f72-8eaf-62cd2fd277f4/
+WARNING 2020-04-09 02:34:35,575 basehttp 124 "GET /image_codes/7fca9e88-8042-4f72-8eaf-62cd2fd277f4/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:35:54,300 basehttp 124 "GET /register/ HTTP/1.1" 200 4405
+INFO 2020-04-09 02:35:54,327 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:35:54,621 base 152 Not Found: /image_codes/e0a23920-0453-4ef8-91d4-03b8a29dab52/
+WARNING 2020-04-09 02:35:54,622 basehttp 124 "GET /image_codes/e0a23920-0453-4ef8-91d4-03b8a29dab52/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:35:55,340 basehttp 124 "GET /register/ HTTP/1.1" 200 4405
+WARNING 2020-04-09 02:35:55,397 base 152 Not Found: /image_codes/ff96fecd-9167-4be1-b466-bf743c3e97e9/
+WARNING 2020-04-09 02:35:55,399 basehttp 124 "GET /image_codes/ff96fecd-9167-4be1-b466-bf743c3e97e9/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:36:37,655 basehttp 124 "GET /register/ HTTP/1.1" 200 4422
+INFO 2020-04-09 02:36:37,667 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:36:37,694 base 152 Not Found: /image_codes/b68c9d29-07e0-4a73-8db9-262523afbd57/
+WARNING 2020-04-09 02:36:37,695 basehttp 124 "GET /image_codes/b68c9d29-07e0-4a73-8db9-262523afbd57/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:36:38,608 basehttp 124 "GET /register/ HTTP/1.1" 200 4422
+WARNING 2020-04-09 02:36:38,650 base 152 Not Found: /image_codes/03d116a9-84de-4601-8257-be9fa85d3d9a/
+WARNING 2020-04-09 02:36:38,651 basehttp 124 "GET /image_codes/03d116a9-84de-4601-8257-be9fa85d3d9a/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:36:47,825 basehttp 124 "GET /register/ HTTP/1.1" 200 4422
+WARNING 2020-04-09 02:36:47,876 base 152 Not Found: /image_codes/d9821bdf-6898-4b17-b2db-4c471cd5e7d9/
+WARNING 2020-04-09 02:36:47,877 basehttp 124 "GET /image_codes/d9821bdf-6898-4b17-b2db-4c471cd5e7d9/ HTTP/1.1" 404 2250
+WARNING 2020-04-09 02:36:50,970 base 152 Not Found: /register/index.html
+WARNING 2020-04-09 02:36:50,972 basehttp 124 "GET /register/index.html HTTP/1.1" 404 2160
+WARNING 2020-04-09 02:36:52,686 base 152 Not Found: /image_codes/0c8a8af1-99b2-410d-962f-a5f96f2ae5f9/
+WARNING 2020-04-09 02:36:52,688 basehttp 124 "GET /image_codes/0c8a8af1-99b2-410d-962f-a5f96f2ae5f9/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:37:54,959 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+INFO 2020-04-09 02:37:54,977 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:37:55,010 base 152 Not Found: /image_codes/58f16519-3d47-444f-9143-334005f724f5/
+WARNING 2020-04-09 02:37:55,012 basehttp 124 "GET /image_codes/58f16519-3d47-444f-9143-334005f724f5/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:38:16,887 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+WARNING 2020-04-09 02:38:16,995 base 152 Not Found: /image_codes/6ea77355-6c19-441e-a5c3-0966a9ea8311/
+WARNING 2020-04-09 02:38:16,996 basehttp 124 "GET /image_codes/6ea77355-6c19-441e-a5c3-0966a9ea8311/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:38:17,570 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+WARNING 2020-04-09 02:38:17,625 base 152 Not Found: /image_codes/e1414baa-ee8d-4716-bcc5-8e4cbe56eb9f/
+WARNING 2020-04-09 02:38:17,626 basehttp 124 "GET /image_codes/e1414baa-ee8d-4716-bcc5-8e4cbe56eb9f/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:38:18,153 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+WARNING 2020-04-09 02:38:18,198 base 152 Not Found: /image_codes/b84574bf-f026-4983-87a0-f5b70551b996/
+WARNING 2020-04-09 02:38:18,201 basehttp 124 "GET /image_codes/b84574bf-f026-4983-87a0-f5b70551b996/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:38:18,790 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+WARNING 2020-04-09 02:38:18,830 base 152 Not Found: /image_codes/136f1048-5e56-47fa-a50c-5cb48287ce8c/
+WARNING 2020-04-09 02:38:18,831 basehttp 124 "GET /image_codes/136f1048-5e56-47fa-a50c-5cb48287ce8c/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:38:19,339 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+WARNING 2020-04-09 02:38:19,378 base 152 Not Found: /image_codes/11361917-f736-41ba-8c23-277bbf7c6cf4/
+WARNING 2020-04-09 02:38:19,378 basehttp 124 "GET /image_codes/11361917-f736-41ba-8c23-277bbf7c6cf4/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:38:19,986 basehttp 124 "GET /register/ HTTP/1.1" 200 4321
+WARNING 2020-04-09 02:38:20,029 base 152 Not Found: /image_codes/585d6ec5-fcc4-4e32-89a9-887768c11269/
+WARNING 2020-04-09 02:38:20,031 basehttp 124 "GET /image_codes/585d6ec5-fcc4-4e32-89a9-887768c11269/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:39:24,070 basehttp 124 "GET /register/ HTTP/1.1" 200 4362
+INFO 2020-04-09 02:39:24,087 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:39:24,136 base 152 Not Found: /image_codes/56651e05-afb6-498f-ab64-fd4d1ec9d8f2/
+WARNING 2020-04-09 02:39:24,137 basehttp 124 "GET /image_codes/56651e05-afb6-498f-ab64-fd4d1ec9d8f2/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:40:20,675 basehttp 124 "GET /register/ HTTP/1.1" 200 4339
+INFO 2020-04-09 02:40:20,692 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:40:20,720 base 152 Not Found: /image_codes/dce2cf0d-4378-46a7-a79f-d7d371d923aa/
+WARNING 2020-04-09 02:40:20,721 basehttp 124 "GET /image_codes/dce2cf0d-4378-46a7-a79f-d7d371d923aa/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:41:07,977 basehttp 124 "GET /register/ HTTP/1.1" 200 3949
+WARNING 2020-04-09 02:41:08,027 base 152 Not Found: /image_codes/e5fcaa88-a787-4682-8aa1-fab44c18d480/
+WARNING 2020-04-09 02:41:08,028 basehttp 124 "GET /image_codes/e5fcaa88-a787-4682-8aa1-fab44c18d480/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:41:53,817 basehttp 124 "GET /register/ HTTP/1.1" 200 3717
+INFO 2020-04-09 02:41:53,829 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:41:53,881 base 152 Not Found: /image_codes/6028c74a-635e-41e6-b1f0-03629f27e9d0/
+WARNING 2020-04-09 02:41:53,884 basehttp 124 "GET /image_codes/6028c74a-635e-41e6-b1f0-03629f27e9d0/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:42:23,892 basehttp 124 "GET /register/ HTTP/1.1" 200 3326
+WARNING 2020-04-09 02:42:23,949 base 152 Not Found: /image_codes/40b5358f-0c38-4b1d-8f30-3defc5b91159/
+WARNING 2020-04-09 02:42:23,950 basehttp 124 "GET /image_codes/40b5358f-0c38-4b1d-8f30-3defc5b91159/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:45:26,133 basehttp 124 "GET /register/ HTTP/1.1" 200 3334
+INFO 2020-04-09 02:45:26,156 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:45:26,182 base 152 Not Found: /image_codes/d0b28217-febc-4116-8dd1-612b2125f813/
+WARNING 2020-04-09 02:45:26,184 basehttp 124 "GET /image_codes/d0b28217-febc-4116-8dd1-612b2125f813/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:46:20,047 basehttp 124 "GET /register/ HTTP/1.1" 200 3325
+WARNING 2020-04-09 02:46:20,087 base 152 Not Found: /image_codes/09bdeaeb-07f9-4186-b9f6-9c017d0c5393/
+WARNING 2020-04-09 02:46:20,088 basehttp 124 "GET /image_codes/09bdeaeb-07f9-4186-b9f6-9c017d0c5393/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:46:57,726 basehttp 124 "GET /register/ HTTP/1.1" 200 3317
+INFO 2020-04-09 02:46:57,740 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 02:46:57,774 base 152 Not Found: /image_codes/f6945c06-6c3b-4bec-8340-faabe1d9a8a3/
+WARNING 2020-04-09 02:46:57,776 basehttp 124 "GET /image_codes/f6945c06-6c3b-4bec-8340-faabe1d9a8a3/ HTTP/1.1" 404 2250
+INFO 2020-04-09 02:47:29,280 basehttp 124 "GET /register/ HTTP/1.1" 200 3320
+WARNING 2020-04-09 02:47:29,323 base 152 Not Found: /image_codes/e82d0608-b438-4199-97d4-98e76eb0fe6b/
+WARNING 2020-04-09 02:47:29,323 basehttp 124 "GET /image_codes/e82d0608-b438-4199-97d4-98e76eb0fe6b/ HTTP/1.1" 404 2250
+INFO 2020-04-09 06:48:57,001 basehttp 124 "GET /register/ HTTP/1.1" 200 3329
+INFO 2020-04-09 06:48:57,021 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 06:48:57,050 base 152 Not Found: /image_codes/54efc489-3c5b-4aa0-88c0-76c7dccb686a/
+WARNING 2020-04-09 06:48:57,051 basehttp 124 "GET /image_codes/54efc489-3c5b-4aa0-88c0-76c7dccb686a/ HTTP/1.1" 404 2250
+INFO 2020-04-09 06:49:23,821 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 06:49:23,856 base 152 Not Found: /image_codes/ac8f5ebe-f5a6-4548-91b9-f0ab48db022b/
+WARNING 2020-04-09 06:49:23,857 basehttp 124 "GET /image_codes/ac8f5ebe-f5a6-4548-91b9-f0ab48db022b/ HTTP/1.1" 404 2250
+INFO 2020-04-09 07:17:22,093 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+INFO 2020-04-09 07:17:22,107 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 07:17:22,136 base 152 Not Found: /image_codes/edd5ae22-69eb-4151-a483-b584e97f9406/
+WARNING 2020-04-09 07:17:22,139 basehttp 124 "GET /image_codes/edd5ae22-69eb-4151-a483-b584e97f9406/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:17:25,148 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+WARNING 2020-04-09 07:17:38,091 base 152 Not Found: /image_codes/ec093d9e-6d4d-4bbd-8670-2d521d36d539/
+WARNING 2020-04-09 07:17:38,091 basehttp 124 "GET /image_codes/ec093d9e-6d4d-4bbd-8670-2d521d36d539/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:17:39,807 base 152 Not Found: /image_codes/62a2505a-e41b-4be1-a63b-25bd317b19f6/
+WARNING 2020-04-09 07:17:39,809 basehttp 124 "GET /image_codes/62a2505a-e41b-4be1-a63b-25bd317b19f6/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:17:40,958 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:17:40,998 base 152 Not Found: /image_codes/875c77f2-1876-4e85-bb75-89a8c3974d2b/
+WARNING 2020-04-09 07:17:40,999 basehttp 124 "GET /image_codes/875c77f2-1876-4e85-bb75-89a8c3974d2b/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:17:42,206 base 152 Not Found: /image_codes/78580045-c5c6-40c5-96b5-2d1e15568ab2/
+WARNING 2020-04-09 07:17:42,207 basehttp 124 "GET /image_codes/78580045-c5c6-40c5-96b5-2d1e15568ab2/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:18:37,599 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:18:37,648 base 152 Not Found: /image_codes/0ee7ac76-d37b-4698-8713-be2620d586a3/
+WARNING 2020-04-09 07:18:37,649 basehttp 124 "GET /image_codes/0ee7ac76-d37b-4698-8713-be2620d586a3/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:18:39,350 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:18:39,396 base 152 Not Found: /image_codes/08116e15-22f0-48b7-b881-2bc053382354/
+WARNING 2020-04-09 07:18:39,397 basehttp 124 "GET /image_codes/08116e15-22f0-48b7-b881-2bc053382354/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:18:40,085 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:18:40,126 base 152 Not Found: /image_codes/4c4aae70-74bc-4532-bf5d-a292c07b2108/
+WARNING 2020-04-09 07:18:40,127 basehttp 124 "GET /image_codes/4c4aae70-74bc-4532-bf5d-a292c07b2108/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:18:41,006 base 152 Not Found: /image_codes/0e869f97-4fe1-4c13-98e1-0077fe21d884/
+WARNING 2020-04-09 07:18:41,007 basehttp 124 "GET /image_codes/0e869f97-4fe1-4c13-98e1-0077fe21d884/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:19:40,971 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:19:41,029 base 152 Not Found: /image_codes/b5d84e47-2aba-4c1a-bd2c-28baf3b28312/
+WARNING 2020-04-09 07:19:41,031 basehttp 124 "GET /image_codes/b5d84e47-2aba-4c1a-bd2c-28baf3b28312/ HTTP/1.1" 404 2455
+INFO 2020-04-09 07:19:47,111 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:19:47,198 base 152 Not Found: /image_codes/4611f84e-985b-4998-a943-1767f1b33680/
+WARNING 2020-04-09 07:19:47,199 basehttp 124 "GET /image_codes/4611f84e-985b-4998-a943-1767f1b33680/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:19:48,616 base 152 Not Found: /image_codes/fa4952a1-b6d1-4d65-abe5-41d5bd6308e9/
+WARNING 2020-04-09 07:19:48,617 basehttp 124 "GET /image_codes/fa4952a1-b6d1-4d65-abe5-41d5bd6308e9/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:20:50,798 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 07:25:49,881 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:25:49,997 base 152 Not Found: /image_codes/14197e02-0422-4b6f-ab68-4bee3e901a08/
+WARNING 2020-04-09 07:25:50,014 basehttp 124 "GET /image_codes/14197e02-0422-4b6f-ab68-4bee3e901a08/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:25:50,017 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 07:26:41,753 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:26:41,820 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2020-04-09 07:26:41,851 base 152 Not Found: /image_codes/c25e4ab1-fb71-4473-b684-92dca86a2029/
+WARNING 2020-04-09 07:26:41,853 basehttp 124 "GET /image_codes/c25e4ab1-fb71-4473-b684-92dca86a2029/ HTTP/1.1" 404 2455
+WARNING 2020-04-09 07:27:10,849 base 152 Not Found: /image_codes/c25e4ab1-fb71-4473-b684-92dca86a2029/
+WARNING 2020-04-09 07:27:10,850 basehttp 124 "GET /image_codes/c25e4ab1-fb71-4473-b684-92dca86a2029/ HTTP/1.1" 404 2455
+ERROR 2020-04-09 07:28:19,718 exception 135 Internal Server Error: /image_codes/c25e4ab1-fb71-4473-b684-92dca86a2029/
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/verifications/views.py", line 27, in get
+    redis_conn = get_redis_connection('verify_code')
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2020-04-09 07:28:19,869 basehttp 124 "GET /image_codes/c25e4ab1-fb71-4473-b684-92dca86a2029/ HTTP/1.1" 500 97529
+INFO 2020-04-09 07:28:24,837 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:28:24,966 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2020-04-09 07:28:30,291 exception 135 Internal Server Error: /image_codes/d8c7b59d-0384-4f43-9910-5a5d3c348062/
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/verifications/views.py", line 27, in get
+    redis_conn = get_redis_connection('verify_code')
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2020-04-09 07:28:30,448 basehttp 124 "GET /image_codes/d8c7b59d-0384-4f43-9910-5a5d3c348062/ HTTP/1.1" 500 98989
+INFO 2020-04-09 07:28:32,674 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:28:32,756 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+ERROR 2020-04-09 07:28:32,803 exception 135 Internal Server Error: /image_codes/d5f14998-5fbf-4dce-84cf-c0c64c476295/
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/verifications/views.py", line 27, in get
+    redis_conn = get_redis_connection('verify_code')
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2020-04-09 07:28:32,969 basehttp 124 "GET /image_codes/d5f14998-5fbf-4dce-84cf-c0c64c476295/ HTTP/1.1" 500 98786
+INFO 2020-04-09 07:32:08,915 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:32:08,999 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 07:32:09,021 basehttp 124 "GET /image_codes/e5ac55dd-4129-45e9-a3ba-72f74ebef725/ HTTP/1.1" 200 3127
+INFO 2020-04-09 07:32:16,032 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:32:24,432 basehttp 124 "GET /image_codes/2482e410-ddb5-460c-b08c-6943dcfaddb4/ HTTP/1.1" 200 3366
+INFO 2020-04-09 07:32:26,662 basehttp 124 "GET /image_codes/16a63e87-98f2-4d6e-b9d9-736f3eeb0e6c/ HTTP/1.1" 200 2916
+INFO 2020-04-09 07:32:35,405 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:32:38,904 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:32:55,822 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:32:59,474 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:10,968 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:12,048 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:12,196 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:12,380 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:12,544 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:12,720 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:12,907 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:33:13,494 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:33,729 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 07:43:33,826 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 07:43:33,868 basehttp 124 "GET /image_codes/d98afa13-0cf7-4815-b9e5-1739e615fe99/ HTTP/1.1" 200 3124
+INFO 2020-04-09 07:43:41,035 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:57,820 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:58,987 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:59,169 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:59,353 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:59,513 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:59,673 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:43:59,835 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:46:44,816 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:46:46,589 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:46:47,629 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:46:48,106 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 07:46:48,528 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:25,499 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+INFO 2020-04-09 08:13:25,529 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2020-04-09 08:13:25,699 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:13:25,717 basehttp 124 "GET /image_codes/7baa24b7-81a5-407d-9ed8-e54a585276a0/ HTTP/1.1" 200 3603
+INFO 2020-04-09 08:13:28,600 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:37,621 basehttp 124 "GET /image_codes/e763661d-5f37-4d22-b2f8-732a8720acc5/ HTTP/1.1" 200 3211
+INFO 2020-04-09 08:13:48,987 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:49,895 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:50,505 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:50,637 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:50,769 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:13:50,918 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:14:17,404 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+WARNING 2020-04-09 08:24:53,724 base 152 Not Found: /
+WARNING 2020-04-09 08:24:53,726 basehttp 124 "GET / HTTP/1.1" 404 2475
+INFO 2020-04-09 08:24:57,586 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 08:24:57,699 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:24:57,759 basehttp 124 "GET /image_codes/dcbdd63d-9513-486a-aef0-f6cd72a5eca6/ HTTP/1.1" 200 3393
+INFO 2020-04-09 08:25:06,760 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:51:52,328 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+INFO 2020-04-09 08:51:52,360 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+INFO 2020-04-09 08:51:52,514 basehttp 124 "GET /image_codes/eca8ac4c-848c-451a-9dec-a04ff0886c8a/ HTTP/1.1" 200 3147
+WARNING 2020-04-09 08:51:52,525 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:51:57,148 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:52:13,626 basehttp 124 "GET /image_codes/d5a105d2-9b23-4843-90a7-cdfd64f3e24e/ HTTP/1.1" 200 3384
+INFO 2020-04-09 08:52:23,578 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:18,894 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:22,348 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,029 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,193 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,365 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,506 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,651 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,827 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:23,980 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:24,135 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:24,300 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:24,474 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:24,658 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:45,131 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:45,870 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:46,340 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:46,695 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:46,891 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:47,046 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:47,219 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:47,388 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:47,535 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:47,704 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:53:47,881 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:57:39,631 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:57:40,409 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:57:41,076 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:57:43,307 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+INFO 2020-04-09 08:57:44,586 basehttp 124 "GET /register/ HTTP/1.1" 200 3326
+WARNING 2020-04-09 08:57:44,669 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:57:44,704 basehttp 124 "GET /image_codes/b7a821d3-d58a-483d-92b7-dc71f1fc17a2/ HTTP/1.1" 200 3175
+INFO 2020-04-09 08:57:52,368 basehttp 124 "GET /register/ HTTP/1.1" 200 3326
+INFO 2020-04-09 08:57:52,396 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-04-09 08:57:52,431 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-04-09 08:57:52,435 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-04-09 08:57:52,436 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-04-09 08:57:52,445 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 200 15735
+INFO 2020-04-09 08:57:52,448 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 40094
+INFO 2020-04-09 08:57:52,470 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 5114
+INFO 2020-04-09 08:57:52,493 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2020-04-09 08:57:52,498 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2020-04-09 08:57:52,534 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:57:52,559 basehttp 124 "GET /image_codes/684f3133-bd3d-486c-a856-1ef7ec4a68ae/ HTTP/1.1" 200 3344
+WARNING 2020-04-09 08:57:53,718 base 152 Not Found: /check_image_codes/&uuid=684f3133-bd3d-486c-a856-1ef7ec4a68ae
+WARNING 2020-04-09 08:57:53,720 basehttp 124 "GET /check_image_codes/&uuid=684f3133-bd3d-486c-a856-1ef7ec4a68ae HTTP/1.1" 404 2885
+WARNING 2020-04-09 08:58:00,673 base 152 Not Found: /check_image_codes/&uuid=684f3133-bd3d-486c-a856-1ef7ec4a68ae
+WARNING 2020-04-09 08:58:00,674 basehttp 124 "GET /check_image_codes/&uuid=684f3133-bd3d-486c-a856-1ef7ec4a68ae HTTP/1.1" 404 2885
+INFO 2020-04-09 08:58:14,807 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+WARNING 2020-04-09 08:58:14,911 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:58:14,951 basehttp 124 "GET /image_codes/00251e16-0000-4ee7-bae3-5e9745268a74/ HTTP/1.1" 200 3507
+WARNING 2020-04-09 08:58:15,874 base 152 Not Found: /check_image_codes/&uuid=00251e16-0000-4ee7-bae3-5e9745268a74
+WARNING 2020-04-09 08:58:15,875 basehttp 124 "GET /check_image_codes/&uuid=00251e16-0000-4ee7-bae3-5e9745268a74 HTTP/1.1" 404 2885
+INFO 2020-04-09 08:58:19,861 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+WARNING 2020-04-09 08:58:38,419 base 152 Not Found: /check_image_codes/klb3&uuid=00251e16-0000-4ee7-bae3-5e9745268a74
+WARNING 2020-04-09 08:58:38,420 basehttp 124 "GET /check_image_codes/klb3&uuid=00251e16-0000-4ee7-bae3-5e9745268a74 HTTP/1.1" 404 2897
+INFO 2020-04-09 08:58:38,433 basehttp 124 "GET /usernames/wuyang/count HTTP/1.1" 200 41
+ERROR 2020-04-09 08:58:45,203 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/client/default.py", line 474, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/users/views.py", line 73, in post
+    login(request, user)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/client/default.py", line 472, in has_key
+    return client.exists(key) == 1
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/client.py", line 1554, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2020-04-09 08:58:45,441 basehttp 124 "POST /register/ HTTP/1.1" 500 150941
+INFO 2020-04-09 08:59:34,282 basehttp 124 "GET /register/ HTTP/1.1" 200 3308
+INFO 2020-04-09 08:59:34,318 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2020-04-09 08:59:34,371 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 08:59:34,404 basehttp 124 "GET /image_codes/b6b613b5-c85d-4f1f-93bb-430e346971f2/ HTTP/1.1" 200 3307
+INFO 2020-04-09 09:07:40,122 basehttp 124 "GET /register/ HTTP/1.1" 200 3391
+INFO 2020-04-09 09:07:40,184 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2020-04-09 09:07:40,236 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:07:40,487 basehttp 124 "GET /image_codes/2756da7b-6515-42e2-95fe-f0b6ed6af52f/ HTTP/1.1" 200 3383
+INFO 2020-04-09 09:08:30,408 basehttp 124 "GET /register/ HTTP/1.1" 200 3380
+WARNING 2020-04-09 09:08:30,488 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:08:30,721 basehttp 124 "GET /image_codes/d1db1483-871d-4647-bb1a-5bc7f0dfe1d6/ HTTP/1.1" 200 3215
+INFO 2020-04-09 09:08:57,192 basehttp 124 "GET /register/ HTTP/1.1" 200 3319
+WARNING 2020-04-09 09:08:57,259 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:08:57,506 basehttp 124 "GET /image_codes/aab4e8c7-b7e9-4042-b4b2-08e8d79b1a8e/ HTTP/1.1" 200 3134
+INFO 2020-04-09 09:08:58,197 basehttp 124 "GET /register/ HTTP/1.1" 200 3319
+WARNING 2020-04-09 09:08:58,272 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:08:58,301 basehttp 124 "GET /image_codes/c3c5254a-b9da-445a-824f-095508d01475/ HTTP/1.1" 200 3321
+INFO 2020-04-09 09:08:58,934 basehttp 124 "GET /register/ HTTP/1.1" 200 3319
+WARNING 2020-04-09 09:08:59,015 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:08:59,043 basehttp 124 "GET /image_codes/d5285a6c-cbff-4484-824f-19473a030518/ HTTP/1.1" 200 3130
+INFO 2020-04-09 09:08:59,917 basehttp 124 "GET /register/ HTTP/1.1" 200 3319
+WARNING 2020-04-09 09:08:59,989 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:09:00,034 basehttp 124 "GET /image_codes/7ee7d1b2-9c0a-4961-b38b-e3a2ce5af9ff/ HTTP/1.1" 200 3120
+INFO 2020-04-09 09:09:00,625 basehttp 124 "GET /register/ HTTP/1.1" 200 3319
+WARNING 2020-04-09 09:09:00,697 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:09:00,723 basehttp 124 "GET /image_codes/e9a91800-7146-40ae-b366-e147500a022d/ HTTP/1.1" 200 3059
+INFO 2020-04-09 09:09:38,639 basehttp 124 "GET /register/ HTTP/1.1" 200 3309
+INFO 2020-04-09 09:09:38,660 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2020-04-09 09:09:38,744 basehttp 124 "GET /image_codes/23fb14c0-09db-4057-8083-0925a3dee08a/ HTTP/1.1" 200 2938
+WARNING 2020-04-09 09:09:38,759 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:10:24,033 basehttp 124 "GET /register/ HTTP/1.1" 200 3381
+WARNING 2020-04-09 09:10:24,106 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:10:24,146 basehttp 124 "GET /image_codes/73017d20-8868-40ed-92e4-b600529a53e8/ HTTP/1.1" 200 3504
+INFO 2020-04-09 09:10:45,563 basehttp 124 "GET /register/ HTTP/1.1" 200 3345
+WARNING 2020-04-09 09:10:45,649 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:10:45,657 basehttp 124 "GET /image_codes/83989550-6f1a-4530-bb66-478b08af39a2/ HTTP/1.1" 200 2945
+INFO 2020-04-09 09:11:26,805 basehttp 124 "GET /register/ HTTP/1.1" 200 3390
+WARNING 2020-04-09 09:11:26,872 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:11:26,917 basehttp 124 "GET /image_codes/93838c5c-cb22-4780-989e-bcf83bcc76e4/ HTTP/1.1" 200 3368
+INFO 2020-04-09 09:11:55,356 basehttp 124 "GET /register/ HTTP/1.1" 200 3366
+INFO 2020-04-09 09:11:55,378 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2020-04-09 09:11:55,424 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:11:55,473 basehttp 124 "GET /image_codes/5ad348f3-0f60-443d-abea-88a802cd3792/ HTTP/1.1" 200 2608
+INFO 2020-04-09 09:12:20,217 basehttp 124 "GET /register/ HTTP/1.1" 200 3382
+WARNING 2020-04-09 09:12:20,285 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:12:20,330 basehttp 124 "GET /image_codes/f2ba0ba3-4852-45c4-a343-cbf920cd473a/ HTTP/1.1" 200 3613
+INFO 2020-04-09 09:12:40,605 basehttp 124 "GET /register/ HTTP/1.1" 200 3374
+WARNING 2020-04-09 09:12:40,675 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:12:40,708 basehttp 124 "GET /image_codes/deebef6b-a5c9-4ca3-9972-ed699947f13d/ HTTP/1.1" 200 2848
+INFO 2020-04-09 09:13:20,032 basehttp 124 "GET /register/ HTTP/1.1" 200 3448
+INFO 2020-04-09 09:13:20,121 basehttp 124 "GET /image_codes/684edef0-f852-4779-8dc1-f0d4adfdcd3f/ HTTP/1.1" 200 3221
+WARNING 2020-04-09 09:13:20,145 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:13:50,788 basehttp 124 "GET /register/ HTTP/1.1" 200 3472
+WARNING 2020-04-09 09:13:50,860 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:13:50,903 basehttp 124 "GET /image_codes/29f46a76-509f-4c88-bde2-fe6e4c937bf7/ HTTP/1.1" 200 3292
+INFO 2020-04-09 09:21:19,315 basehttp 124 "GET /register/ HTTP/1.1" 200 3472
+INFO 2020-04-09 09:21:19,333 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2020-04-09 09:21:19,424 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:21:19,433 basehttp 124 "GET /image_codes/68769ada-425c-4dd8-b6a1-c8faf70cfe76/ HTTP/1.1" 200 3654
+WARNING 2020-04-09 09:21:24,281 base 152 Not Found: /register/index.html
+WARNING 2020-04-09 09:21:24,283 basehttp 124 "GET /register/index.html HTTP/1.1" 404 2912
+WARNING 2020-04-09 09:21:25,820 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:21:25,845 basehttp 124 "GET /image_codes/906074f0-7b23-4190-8376-85f646240821/ HTTP/1.1" 200 3301
+WARNING 2020-04-09 09:21:27,339 base 152 Not Found: /register/index.html
+WARNING 2020-04-09 09:21:27,340 basehttp 124 "GET /register/index.html HTTP/1.1" 404 2912
+WARNING 2020-04-09 09:21:28,536 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:21:28,563 basehttp 124 "GET /image_codes/c53046aa-b527-4372-99f3-3612a8089942/ HTTP/1.1" 200 3427
+INFO 2020-04-09 09:29:13,064 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+INFO 2020-04-09 09:29:13,093 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2020-04-09 09:29:13,203 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:29:13,219 basehttp 124 "GET /image_codes/dc8e1df9-6422-4c5b-86d8-211b672bb806/ HTTP/1.1" 200 3218
+INFO 2020-04-09 09:29:21,256 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+INFO 2020-04-09 09:29:21,287 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-04-09 09:29:21,292 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 40094
+INFO 2020-04-09 09:29:21,303 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-04-09 09:29:21,306 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-04-09 09:29:21,326 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 200 15735
+INFO 2020-04-09 09:29:21,328 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-04-09 09:29:21,344 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 5114
+INFO 2020-04-09 09:29:21,352 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2020-04-09 09:29:21,357 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+WARNING 2020-04-09 09:29:21,372 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:29:21,424 basehttp 124 "GET /image_codes/ce8fe757-dcac-4daf-8500-0c9fe3286868/ HTTP/1.1" 200 3145
+INFO 2020-04-09 09:30:10,850 basehttp 124 "GET /usernames/wanghao/count HTTP/1.1" 200 41
+WARNING 2020-04-09 09:30:25,436 base 152 Not Found: /check_image_codes/uiry&uuid=ce8fe757-dcac-4daf-8500-0c9fe3286868
+INFO 2020-04-09 09:30:25,459 basehttp 124 "GET /usernames/wanghao/count HTTP/1.1" 200 41
+WARNING 2020-04-09 09:30:25,461 basehttp 124 "GET /check_image_codes/uiry&uuid=ce8fe757-dcac-4daf-8500-0c9fe3286868 HTTP/1.1" 404 3061
+ERROR 2020-04-09 09:30:29,362 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/client/default.py", line 474, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/users/views.py", line 73, in post
+    login(request, user)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django_redis/client/default.py", line 472, in has_key
+    return client.exists(key) == 1
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/client.py", line 1554, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2020-04-09 09:30:29,575 basehttp 124 "POST /register/ HTTP/1.1" 500 150945
+INFO 2020-04-09 09:33:07,313 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+WARNING 2020-04-09 09:33:07,422 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:33:07,456 basehttp 124 "GET /image_codes/69cfe62c-e1b6-480c-95f8-955d69c68a86/ HTTP/1.1" 200 3170
+INFO 2020-04-09 09:33:12,880 basehttp 124 "GET /usernames/wushuang/count HTTP/1.1" 200 41
+INFO 2020-04-09 09:33:21,969 basehttp 124 "GET /image_codes/0be7aaf0-5ef8-4252-a072-6186a3f5acf5/ HTTP/1.1" 200 3395
+WARNING 2020-04-09 09:33:33,669 base 152 Not Found: /check_image_codes/znu7&uuid=0be7aaf0-5ef8-4252-a072-6186a3f5acf5
+INFO 2020-04-09 09:33:33,692 basehttp 124 "GET /usernames/wushuang/count HTTP/1.1" 200 41
+WARNING 2020-04-09 09:33:33,699 basehttp 124 "GET /check_image_codes/znu7&uuid=0be7aaf0-5ef8-4252-a072-6186a3f5acf5 HTTP/1.1" 404 3061
+INFO 2020-04-09 09:33:42,494 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2020-04-09 09:33:42,504 basehttp 124 "GET / HTTP/1.1" 200 124
+INFO 2020-04-09 09:33:50,216 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+INFO 2020-04-09 09:33:50,235 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+WARNING 2020-04-09 09:33:50,324 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:33:50,340 basehttp 124 "GET /image_codes/3cd2568d-8c7e-4b40-acb3-c17f5ac61fb7/ HTTP/1.1" 200 2984
+INFO 2020-04-09 09:34:41,154 basehttp 124 "GET /usernames/wuyang1/count HTTP/1.1" 200 41
+WARNING 2020-04-09 09:34:56,228 base 152 Not Found: /check_image_codes/x7kq&uuid=3cd2568d-8c7e-4b40-acb3-c17f5ac61fb7
+WARNING 2020-04-09 09:34:56,237 basehttp 124 "GET /check_image_codes/x7kq&uuid=3cd2568d-8c7e-4b40-acb3-c17f5ac61fb7 HTTP/1.1" 404 3061
+INFO 2020-04-09 09:34:56,259 basehttp 124 "GET /usernames/wuyang1/count HTTP/1.1" 200 41
+INFO 2020-04-09 09:35:01,870 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2020-04-09 09:35:01,901 basehttp 124 "GET / HTTP/1.1" 200 124
+INFO 2020-04-09 09:35:15,322 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+WARNING 2020-04-09 09:35:15,414 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:35:15,459 basehttp 124 "GET /image_codes/f24b2700-02b5-4513-97b1-dee602c09ad1/ HTTP/1.1" 200 3069
+INFO 2020-04-09 09:35:25,286 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+WARNING 2020-04-09 09:35:25,369 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:35:25,406 basehttp 124 "GET /image_codes/025bd05c-d37d-43fc-9b7d-fceba5673ba6/ HTTP/1.1" 200 2968
+INFO 2020-04-09 09:42:56,163 basehttp 124 "GET / HTTP/1.1" 200 124
+INFO 2020-04-09 09:43:00,825 basehttp 124 "GET /login/ HTTP/1.1" 200 2921
+INFO 2020-04-09 09:43:00,851 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2020-04-09 09:43:00,875 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2020-04-09 09:43:00,883 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+INFO 2020-04-09 09:43:00,896 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+WARNING 2020-04-09 09:43:00,946 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-09 09:44:24,726 basehttp 124 "GET /login/ HTTP/1.1" 200 2905
+INFO 2020-04-09 09:45:01,193 basehttp 124 "GET /login/ HTTP/1.1" 200 2934
+INFO 2020-04-09 09:45:32,441 basehttp 124 "GET /login/ HTTP/1.1" 200 2832
+INFO 2020-04-09 09:45:47,393 basehttp 124 "GET /login/ HTTP/1.1" 200 2863
+INFO 2020-04-09 09:46:34,977 basehttp 124 "GET /login/ HTTP/1.1" 200 2872
+INFO 2020-04-09 09:46:39,815 basehttp 124 "GET /login/ HTTP/1.1" 200 2872
+INFO 2020-04-09 09:48:44,112 basehttp 124 "GET /login/ HTTP/1.1" 200 2894
+INFO 2020-04-09 09:49:16,235 basehttp 124 "GET /login/ HTTP/1.1" 200 2795
+INFO 2020-04-09 09:49:34,191 basehttp 124 "GET /login/ HTTP/1.1" 200 2794
+INFO 2020-04-09 09:49:56,396 basehttp 124 "GET /login/ HTTP/1.1" 200 2401
+INFO 2020-04-09 09:50:28,432 basehttp 124 "GET /login/ HTTP/1.1" 200 2363
+INFO 2020-04-09 09:50:47,753 basehttp 124 "GET /login/ HTTP/1.1" 200 2323
+INFO 2020-04-09 09:51:04,962 basehttp 124 "GET /login/ HTTP/1.1" 200 2325
+INFO 2020-04-09 09:51:59,290 basehttp 124 "GET /login/ HTTP/1.1" 200 2362
+WARNING 2020-04-09 09:52:06,683 base 152 Not Found: /login/index.html
+WARNING 2020-04-09 09:52:06,687 basehttp 124 "GET /login/index.html HTTP/1.1" 404 3073
+INFO 2020-04-09 09:52:21,935 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-04-09 09:52:21,941 basehttp 124 "GET / HTTP/1.1" 200 124
+INFO 2020-04-09 09:52:23,987 basehttp 124 "GET /login/ HTTP/1.1" 200 2362
+INFO 2020-04-09 09:54:18,501 basehttp 124 "GET /login/ HTTP/1.1" 200 2362
+WARNING 2020-04-09 09:54:36,280 base 152 Not Found: /login/register.html
+WARNING 2020-04-09 09:54:36,282 basehttp 124 "GET /login/register.html HTTP/1.1" 404 3082
+INFO 2020-04-09 09:55:51,885 basehttp 124 "GET /login/ HTTP/1.1" 200 2357
+INFO 2020-04-09 09:55:53,128 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+INFO 2020-04-09 09:55:53,144 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2020-04-09 09:55:53,186 basehttp 124 "GET /image_codes/e4c0a0fe-f913-4e27-969f-85db3aff8c4a/ HTTP/1.1" 200 3301
+WARNING 2020-04-09 09:55:56,646 base 152 Not Found: /login/index.html
+WARNING 2020-04-09 09:55:56,647 basehttp 124 "GET /login/index.html HTTP/1.1" 404 3073
+INFO 2020-04-09 09:56:46,603 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+INFO 2020-04-09 09:56:47,277 basehttp 124 "GET / HTTP/1.1" 200 124
+INFO 2020-04-09 09:56:50,811 basehttp 124 "GET /register/ HTTP/1.1" 200 3468
+INFO 2020-04-09 09:56:50,865 basehttp 124 "GET /image_codes/7c79a1fc-e3a2-40dc-8c07-2f3a37adcacd/ HTTP/1.1" 200 3334
+WARNING 2020-04-09 09:56:51,539 base 152 Not Found: /register/index.html
+WARNING 2020-04-09 09:56:51,542 basehttp 124 "GET /register/index.html HTTP/1.1" 404 3082
+INFO 2020-04-09 09:56:53,019 basehttp 124 "GET /image_codes/b7c6a77e-66f9-4e32-9a47-67f3262877eb/ HTTP/1.1" 200 3161
+INFO 2020-04-09 09:57:13,546 basehttp 124 "GET /register/ HTTP/1.1" 200 3457
+INFO 2020-04-09 09:57:13,610 basehttp 124 "GET /image_codes/e1ab2f5f-fca3-429f-884e-950500f93141/ HTTP/1.1" 200 2811
+INFO 2020-04-09 09:57:14,314 basehttp 124 "GET / HTTP/1.1" 200 124
+INFO 2020-04-09 09:57:15,955 basehttp 124 "GET /image_codes/c74e08d2-8ddd-4b54-8bb2-b2036b91a9d2/ HTTP/1.1" 200 2992
+WARNING 2020-04-09 09:57:19,566 base 152 Not Found: /register/login.html
+WARNING 2020-04-09 09:57:19,568 basehttp 124 "GET /register/login.html HTTP/1.1" 404 3082
+INFO 2020-04-09 09:57:20,834 basehttp 124 "GET /image_codes/483c9930-e96b-4e70-9b90-28a335e5a108/ HTTP/1.1" 200 3017
+INFO 2020-04-09 09:58:20,904 basehttp 124 "GET /register/ HTTP/1.1" 200 3452
+INFO 2020-04-09 09:58:20,959 basehttp 124 "GET /image_codes/16bacec9-cb63-4e10-ac87-2398b73e8bf5/ HTTP/1.1" 200 3141
+INFO 2020-04-09 09:58:21,802 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+INFO 2020-04-09 09:58:23,806 basehttp 124 "GET /image_codes/92aaa382-e2ac-492a-82e4-62194a4dab15/ HTTP/1.1" 200 3094
+INFO 2020-04-09 09:58:25,200 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+INFO 2020-04-09 09:58:27,620 basehttp 124 "GET /image_codes/0604303a-3bac-4758-9e29-b96eddece6a9/ HTTP/1.1" 200 3260
+INFO 2020-04-09 09:58:36,937 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+ERROR 2020-04-09 10:00:32,444 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/contents/views.py", line 15, in get
+    return render(request, "index.html")
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/templates/index.html", line 21, in top-level template code
+    <a href="{{ url('users:logout') }}" class="quit">退出</a>
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2020-04-09 10:00:32,682 basehttp 124 "GET / HTTP/1.1" 500 132876
+ERROR 2020-04-09 10:00:37,508 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/contents/views.py", line 15, in get
+    return render(request, "index.html")
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/templates/index.html", line 21, in top-level template code
+    <a href="{{ url('users:logout') }}" class="quit">退出</a>
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2020-04-09 10:00:37,736 basehttp 124 "GET / HTTP/1.1" 500 133012
+ERROR 2020-04-09 10:00:41,392 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/contents/views.py", line 15, in get
+    return render(request, "index.html")
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/templates/index.html", line 21, in top-level template code
+    <a href="{{ url('users:logout') }}" class="quit">退出</a>
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2020-04-09 10:00:41,602 basehttp 124 "GET / HTTP/1.1" 500 132876
+ERROR 2020-04-09 10:02:44,551 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/apps/contents/views.py", line 15, in get
+    return render(request, "index.html")
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/wuyang/Desktop/Django_project/Xtraback/Xtra/Xtra/templates/index.html", line 31, in top-level template code
+    <a href={{ url('users:info') }}>用户中心</a>
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'info' not found. 'info' is not a valid view function or pattern name.
+ERROR 2020-04-09 10:02:44,794 basehttp 124 "GET / HTTP/1.1" 500 132777
+INFO 2020-04-09 10:04:23,533 basehttp 124 "GET / HTTP/1.1" 200 1473
+INFO 2020-04-09 10:04:23,571 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-04-09 10:04:23,574 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+WARNING 2020-04-09 10:04:23,577 basehttp 124 "GET /static/js/index.js HTTP/1.1" 404 1646
+INFO 2020-04-09 10:05:57,251 basehttp 124 "GET / HTTP/1.1" 200 1473
+INFO 2020-04-09 10:05:57,267 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 128
+INFO 2020-04-09 10:07:34,728 basehttp 124 "GET / HTTP/1.1" 200 1460
+INFO 2020-04-09 10:07:34,744 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-04-09 10:07:51,617 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-04-09 10:07:51,622 basehttp 124 "GET / HTTP/1.1" 200 1460
+INFO 2020-04-09 10:07:51,638 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+WARNING 2020-04-09 10:07:56,144 base 152 Not Found: /login.html
+WARNING 2020-04-09 10:07:56,145 basehttp 124 "GET /login.html HTTP/1.1" 404 3227
+WARNING 2020-04-09 10:09:13,337 base 152 Not Found: /login.html
+WARNING 2020-04-09 10:09:13,340 basehttp 124 "GET /login.html HTTP/1.1" 404 3227
+INFO 2020-04-09 10:09:15,884 basehttp 124 "GET / HTTP/1.1" 200 1450
+INFO 2020-04-09 10:09:15,919 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-04-09 10:09:17,553 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+INFO 2020-04-09 10:09:20,368 basehttp 124 "GET /register/ HTTP/1.1" 200 3452
+INFO 2020-04-09 10:09:20,385 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2020-04-09 10:09:20,431 basehttp 124 "GET /image_codes/a4020eea-e9b7-40ea-af8e-21bd4a8d8694/ HTTP/1.1" 200 3111
+INFO 2020-04-09 10:12:50,540 basehttp 124 "GET /register/ HTTP/1.1" 200 3452
+INFO 2020-04-09 10:12:50,562 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2020-04-09 10:12:50,571 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+INFO 2020-04-09 10:12:50,604 basehttp 124 "GET /image_codes/ef4ec6b6-5abd-4580-a521-19c9dccb6d3c/ HTTP/1.1" 200 3185
+INFO 2020-04-09 12:28:14,516 basehttp 124 "GET / HTTP/1.1" 200 1450
+INFO 2020-04-09 12:28:14,538 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2020-04-09 12:28:14,546 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-04-09 12:28:16,242 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+INFO 2020-04-09 12:28:16,269 basehttp 124 "GET /static/images/logo.jpg HTTP/1.1" 304 0
+INFO 2020-04-09 12:28:21,867 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-04-09 12:28:21,875 basehttp 124 "GET / HTTP/1.1" 200 1450
+INFO 2020-04-09 12:39:45,427 basehttp 124 "GET / HTTP/1.1" 200 1817
+INFO 2020-04-09 12:39:48,061 basehttp 124 "GET / HTTP/1.1" 200 1817
+INFO 2020-04-09 12:40:34,134 basehttp 124 "GET / HTTP/1.1" 200 1750
+INFO 2020-04-09 12:40:59,586 basehttp 124 "GET / HTTP/1.1" 200 1755
+INFO 2020-04-09 12:41:24,497 basehttp 124 "GET / HTTP/1.1" 200 1747
+INFO 2020-04-09 12:42:06,429 basehttp 124 "GET / HTTP/1.1" 200 1837
+INFO 2020-04-09 12:42:56,075 basehttp 124 "GET / HTTP/1.1" 200 1852
+INFO 2020-04-09 12:42:56,096 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-04-09 12:43:40,357 basehttp 124 "GET / HTTP/1.1" 200 1852
+INFO 2020-04-09 12:43:41,163 basehttp 124 "GET / HTTP/1.1" 200 1852
+INFO 2020-04-09 12:43:53,125 basehttp 124 "GET / HTTP/1.1" 200 1857
+INFO 2020-04-09 12:47:17,285 basehttp 124 "GET / HTTP/1.1" 200 2362
+INFO 2020-04-09 12:52:00,406 basehttp 124 "GET / HTTP/1.1" 200 2358
+INFO 2020-04-09 12:52:01,127 basehttp 124 "GET / HTTP/1.1" 200 2358
+INFO 2020-04-09 12:52:01,616 basehttp 124 "GET / HTTP/1.1" 200 2358
+INFO 2020-04-09 12:57:26,603 basehttp 124 "GET / HTTP/1.1" 200 2378
+INFO 2020-04-09 12:58:00,504 basehttp 124 "GET / HTTP/1.1" 200 2462
+INFO 2020-04-09 12:58:17,602 basehttp 124 "GET / HTTP/1.1" 200 2447
+INFO 2020-04-09 12:58:39,612 basehttp 124 "GET / HTTP/1.1" 200 2537
+INFO 2020-04-09 12:58:39,629 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-04-09 12:58:40,534 basehttp 124 "GET / HTTP/1.1" 200 2537
+INFO 2020-04-09 12:58:54,561 basehttp 124 "GET / HTTP/1.1" 200 2627
+INFO 2020-04-09 13:00:46,215 basehttp 124 "GET / HTTP/1.1" 200 2655
+INFO 2020-04-09 13:21:26,171 basehttp 124 "GET / HTTP/1.1" 200 2690
+INFO 2020-04-09 13:21:26,195 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-04-09 13:22:03,223 basehttp 124 "GET / HTTP/1.1" 200 2692
+INFO 2020-04-09 13:22:17,505 basehttp 124 "GET / HTTP/1.1" 200 2710
+INFO 2020-04-09 13:22:32,922 basehttp 124 "GET / HTTP/1.1" 200 2696
+INFO 2020-04-09 13:22:39,793 basehttp 124 "GET / HTTP/1.1" 200 2697
+INFO 2020-04-09 13:22:41,939 basehttp 124 "GET / HTTP/1.1" 200 2697
+INFO 2020-04-09 13:22:59,615 basehttp 124 "GET / HTTP/1.1" 200 2698
+INFO 2020-04-09 13:23:10,623 basehttp 124 "GET / HTTP/1.1" 200 2698
+INFO 2020-04-09 13:23:46,977 basehttp 124 "GET / HTTP/1.1" 200 2690
+INFO 2020-04-09 13:23:54,815 basehttp 124 "GET / HTTP/1.1" 200 2690
+INFO 2020-04-09 13:23:54,828 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-04-09 13:23:54,858 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-04-09 13:23:54,860 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-04-09 13:23:54,862 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-04-09 13:23:54,868 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 40094
+INFO 2020-04-09 13:23:54,869 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-04-09 13:23:54,874 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-04-09 13:23:54,875 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 128
+INFO 2020-04-09 13:25:01,198 basehttp 124 "GET / HTTP/1.1" 200 2699
+INFO 2020-04-09 13:25:02,317 basehttp 124 "GET / HTTP/1.1" 200 2699
+INFO 2020-04-09 13:25:03,017 basehttp 124 "GET / HTTP/1.1" 200 2699
+INFO 2020-04-09 13:25:03,737 basehttp 124 "GET / HTTP/1.1" 200 2699
+INFO 2020-04-09 13:25:04,819 basehttp 124 "GET / HTTP/1.1" 200 2699
+INFO 2020-04-09 13:25:05,270 basehttp 124 "GET / HTTP/1.1" 200 2699
