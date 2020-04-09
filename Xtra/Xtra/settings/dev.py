@@ -79,6 +79,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            # 补充Jinja2模板引擎环境
+            'environment': 'Xtra.utils.jinja2_env.jinja2_environment',
         },
     },
 ]
@@ -91,9 +93,13 @@ WSGI_APPLICATION = 'Xtra.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
+        'HOST': '192.168.18.6',    # 数据库主机
+        'PORT': 3306,   # 数据库端口
+        'USER': 'Xtra',  # 数据库用户名
+        'PASSWORD': '123456',   # 数据库用户密码
+        'NAME': 'Xtra'    # 数据库名字
+    },
 }
 
 
