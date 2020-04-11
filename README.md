@@ -87,7 +87,7 @@ supervisorctl reload
 # Experience
 http://47.100.98.161/
 
-
+https://github.com/wuyangdevops/XtrawithDjango/blob/master/register.png
 
 
 
