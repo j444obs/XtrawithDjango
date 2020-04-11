@@ -78,8 +78,8 @@ class BackupView(LoginRequiredMixin, View):
                   + " --password=" + password\
                   + " --host=" + HostIP\
                   + " --port=" + port\
-                  + " /home/wuyang/xtra_test/"
-        command1 = 'ls -t /home/wuyang/xtra_test/|head -n1'
+                  + " /tmp/xtra_test/"
+        command1 = 'ls -t /tmp/xtra_test/|head -n1'
         (retcode1, res1) = subprocess.getstatusoutput(command1)
         order_id = timezone.localtime().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
         try:
@@ -153,10 +153,10 @@ class IncreView(LoginRequiredMixin, View):
                   + " --password=" + password \
                   + " --host=" + HostIP \
                   + " --port=" + port \
-                  + " --incremental /home/wuyang/xtra_test/" \
-                  + " --incremental-basedir=/home/wuyang/xtra_test/" \
+                  + " --incremental /tmp/xtra_test/" \
+                  + " --incremental-basedir=/tmp/xtra_test/" \
                   + filename + "/"
-        command1 = 'ls -t /home/wuyang/xtra_test/|head -n1'
+        command1 = 'ls -t /tmp/xtra_test/|head -n1'
         (retcode1, res1) = subprocess.getstatusoutput(command1)
         order_id = timezone.localtime().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
         try:
