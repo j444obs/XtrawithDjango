@@ -12,50 +12,8 @@ XtrawithDjango/                 # 仓库目录
 │   └── Xtra                    # 工程目录
 │       ├── apps                # 应用目录
 │       │   ├── contents        # 备份和展示应用
-│       │   │   ├── admin.py
-│       │   │   ├── apps.py
-│       │   │   ├── __init__.py
-│       │   │   ├── migrations
-│       │   │   ├── models.py
-│       │   │   ├── __pycache__
-│       │   │   │   ├── admin.cpython-35.pyc
-│       │   │   │   ├── __init__.cpython-35.pyc
-│       │   │   │   ├── models.cpython-35.pyc
-│       │   │   │   ├── urls.cpython-35.pyc
-│       │   │   │   └── views.cpython-35.pyc
-│       │   │   ├── tests.py
-│       │   │   ├── urls.py
-│       │   │   └── views.py
-│       │   ├── __init__.py
 │       │   ├── users                   # 用户管理应用
-│       │   │   ├── admin.py
-│       │   │   ├── apps.py
-│       │   │   ├── __init__.py
-│       │   │   ├── migrations
-│       │   │   ├── models.py
-│       │   │   ├── tests.py
-│       │   │   ├── urls.py
-│       │   │   └── views.py
 │       │   └── verifications           # 认证应用
-│       │       ├── admin.py
-│       │       ├── apps.py
-│       │       ├── constants.py
-│       │       ├── __init__.py
-│       │       ├── lib
-│       │       │   ├── captcha
-│       │       │   │   ├── captcha.py
-│       │       │   │   ├── fonts
-│       │       │   │   │   ├── actionj.ttf
-│       │       │   │   │   ├── Arial.ttf
-│       │       │   │   │   └── Georgia.ttf
-│       │       │   │   ├── __init__.py
-│       │       │   ├── __init__.py
-│       │       ├── migrations
-│       │       │   └── __init__.py
-│       │       ├── models.py
-│       │       ├── tests.py
-│       │       ├── urls.py
-│       │       └── views.py
 │       ├── db.sqlite3
 │       ├── __init__.py
 │       ├── settings            # 工程配置目录
@@ -64,38 +22,11 @@ XtrawithDjango/                 # 仓库目录
 │       │   ├── prod.py
 │       ├── static              # 工程静态文件目录
 │       │   ├── css
-│       │   │   ├── jquery.pagination.css
-│       │   │   ├── main.css
-│       │   │   └── reset.css
-│       │   ├── favicon.ico
 │       │   ├── images
-│       │   │   ├── interval_line.png
-│       │   │   └── logo.jpg
 │       │   └── js
-│       │       ├── axios-0.18.0.min.js
-│       │       ├── backup.js
-│       │       ├── common.js
-│       │       ├── Incre.js
-│       │       ├── index.js
-│       │       ├── jquery-1.12.4.min.js
-│       │       ├── jquery.pagination.min.js
-│       │       ├── login.js
-│       │       ├── register.js
-│       │       ├── showbackup.js
-│       │       ├── slide.js
-│       │       └── vue-2.5.16.js
-│       ├── templates           # 工程模板文件
-│       │   ├── backup.html
-│       │   ├── Incre.html
-│       │   ├── index.html
-│       │   ├── login.html
-│       │   └── register.html
+│       ├── templates           # 工程模板目录
 │       ├── urls.py
-│       ├── utils
-│       │   ├── __init__.py
-│       │   ├── jinja2_env.py
-│       │   ├── models.py
-│       │   └── response_code.py
+│       ├── utils	          # 工程工具目录
 │       └── wsgi.py
 └── Xtra.ini            # Xtra项目的supervisord管理配置文件
 
