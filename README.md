@@ -32,6 +32,58 @@ python manage.py migrate
 # Test
 python manage.py runserver 0.0.0.0:80
 
+# Production
+# Install supervisord
+yum -y install python3-devel
+yum install epel-release
+yum install -y supervisor
+systemctl enable supervisord
+systemctl start supervisord
+
+# Install Nginx 
+yum -y install nginx
+systemctl enable nginx
+systemctl start nginx
+
+# configure Nginx
+user root;
+vim /etc/nginx/nginx.conf
+        location / {
+                include uwsgi_params;
+                uwsgi_pass 127.0.0.1:8000;
+        }
+        location /static {
+         alias /root/Xtra/XtrawithDjango/Xtra/Xtra/static;
+       }
+
+systemctl restart nginx
+
+# configure uwsgi
+pip3 install uwsgi
+cd /etc/supervisord.d/
+vim Xtra.ini
+
+"""
+WSGI config for meiduo_mall project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
+"""
+[uwsgi]
+socket=127.0.0.1:8000
+chdir=/root/Xtra/XtrawithDjango/Xtra
+wsgi-file=Xtra/wsgi.py
+processes=4
+threads=2
+master=True
+pidfile=uwsgi.pid
+daemonize=uwsgi.log
+virtualenv=/root/.virtualenvs/Xtra/
+
+supervisorctl reload
+
 # Experience
 http://47.100.98.161/
 
