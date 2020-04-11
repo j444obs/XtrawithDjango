@@ -58,6 +58,14 @@ cd XtrawithDjango/
 # (2) Start
 mkvirtualenv -p python3 Xtra
 pip3 install -r mod.txt
+
+cat mod.txt
+Django==1.11.11
+django-redis==4.11.0
+Jinja2==2.11.1
+Pillow==7.1.1
+PyMySQL==0.9.3
+
 python manage.py makemigrations
 python manage.py migrate
 
