@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'users'   # 用户管理模块
+    'users',   # 用户管理模块
+    'contents'  # 备份管理模块
 ]
 
 MIDDLEWARE = [
@@ -218,3 +219,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # 指定自定义的用户模型类
 AUTH_USER_MODEL = 'users.User'
+
+# 判断用户是否登陆后，指定未登录用户重定向的地址
+LOGIN_URL = '/login/'

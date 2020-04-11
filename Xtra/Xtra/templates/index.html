@@ -15,7 +15,9 @@
 		<div class="header">
 			<a href="{{ url('contents:index') }}" class="welcome fl">Index | </a>
 
-            <a class="login_btn fl">| Start Backup</a>
+            <a href="{{ url('contents:backup') }}" class="login_btn fl">| FULL Backup</a>
+
+            <a href="{{ url('contents:incre') }}" class="login_btn fl">| INCRE Backup</a>
 			<div class="fr">
               <div v-if="username" class="login_btn fl" v-cloak>
 					Welcome：<em>[[ username ]]</em>
@@ -32,30 +34,33 @@
 	</div>
         <br/>
         <br/>
-    <table align="center" style="border: 1px solid black; border-collapse: collapse;">
-        <tr>
-            <th width="200px" align="center" style="border: 1px solid black;">hostname</th>
-            <th width="200px" align="center" style="border: 1px solid black;">hostip</th>
-            <th width="200px" align="center" style="border: 1px solid black;">port</th>
-            <th width="200px" align="center" style="border: 1px solid black;">user</th>
-            <th width="200px" align="center" style="border: 1px solid black;">last_backup_time</th>
-            <th width="200px" align="center" style="border: 1px solid black;">last_backup_status</th>
-        </tr>
-        <tr>
-            <td align="center" style="border: 1px solid black;">test1</td>
-            <td align="center" style="border: 1px solid black;">192.168.18.6</td>
-            <td align="center" style="border: 1px solid black;">3306</td>
-            <td align="center" style="border: 1px solid black;">root</td>
-            <td align="center" style="border: 1px solid black;">20200409</td>
-            <td align="center" style="border: 1px solid black;">1</td>
-        </tr>
-    </table>
 
+    <div class="site_top_con">
+        <span>你已创建了<b>{{ backups|length }}</b>个备份</span>
+    </div>
+    <div class="site_con">
+        <div class="site_title">
+        </div>
+        {% for backup in backups %}
+        <ul class="site_list">
+            <li><span>BackupId：</span><b>{{ backup.order_id }}</b></li>
+            <li><span>CreateTime：</span><b>{{ backup.create_time }}</b></li>
+            <li><span>HostIp：</span><b>{{ backup.host_ip }}</b></li>
+            <li><span>DbUser：</span><b>{{ backup.dbuser }}</b></li>
+            <li><span>Db_port：</span><b>{{ backup.dbport }}</b></li>
+            <li><span>Status：</span><b>{{ backup.status }}</b></li>
+            <li><span>Filename：</span><b>{{ backup.filename }}</b></li>
+        </ul>
+        {% endfor %}
+    </div>
 
 	</div>
-
+{#    	<script type="text/javascript">#}
+{#		let backups = {{ backups | safe }};#}
+{#        </script>#}
     <script type="text/javascript" src="{{ static('js/common.js') }}"></script>
-    <script type="text/javascript" src="{{ static('js/slide.js') }}"></script>
     <script type="text/javascript" src="{{ static('js/index.js') }}"></script>
+{#    <script type="text/javascript" src="{{ static('js/showbackup.js') }}"></script>#}
+
 </body>
 </html>

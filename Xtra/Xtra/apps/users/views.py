@@ -6,7 +6,6 @@ from django.urls import reverse
 
 from django.contrib.auth import login, authenticate, logout
 from django.db import DatabaseError
-from django_redis import get_redis_connection
 from users.models import User
 from Xtra.utils.response_code import RETCODE
 
