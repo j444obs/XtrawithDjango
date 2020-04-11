@@ -79,11 +79,12 @@ class BackupView(LoginRequiredMixin, View):
                   + " --host=" + HostIP\
                   + " --port=" + port\
                   + " /tmp/xtra_test/"
+        (retcode, res) = subprocess.getstatusoutput(command)
         command1 = 'ls -t /tmp/xtra_test/|head -n1'
         (retcode1, res1) = subprocess.getstatusoutput(command1)
         order_id = timezone.localtime().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
         try:
-            (retcode, res) = subprocess.getstatusoutput(command)
+
             backup = BackupInfo.objects.create(order_id=order_id,
                                                user=user,
                                                host_ip=HostIP,
@@ -156,11 +157,11 @@ class IncreView(LoginRequiredMixin, View):
                   + " --incremental /tmp/xtra_test/" \
                   + " --incremental-basedir=/tmp/xtra_test/" \
                   + filename + "/"
+        (retcode, res) = subprocess.getstatusoutput(command)
         command1 = 'ls -t /tmp/xtra_test/|head -n1'
         (retcode1, res1) = subprocess.getstatusoutput(command1)
         order_id = timezone.localtime().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
         try:
-            (retcode, res) = subprocess.getstatusoutput(command)
             backup = BackupInfo.objects.create(order_id=order_id,
                                                user=user,
                                                host_ip=HostIP,
