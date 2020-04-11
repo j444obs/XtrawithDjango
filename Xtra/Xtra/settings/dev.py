@@ -28,7 +28,7 @@ SECRET_KEY = '_zv0#c3uj(6^jmlvgocq(57t8irt5td)zr)lll_q=0z)=m!1rg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'Xtra.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
-        'HOST': '192.168.18.6',    # 数据库主机
+        'HOST': '127.0.0.1',    # 数据库主机
         'PORT': 3306,   # 数据库端口
         'USER': 'Xtra',  # 数据库用户名
         'PASSWORD': '123456',   # 数据库用户密码
@@ -109,21 +109,21 @@ DATABASES = {
 CACHES = {
     "default": {    # 默认
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.18.6:6379/0",
+        "LOCATION": "redis://127.0.0.1:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
     "session": {    # session
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.18.6:6379/1",
+        "LOCATION": "redis://127.0.0.1:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
     "verify_code": {        # 验证码
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.18.6:6379/2",
+        "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
