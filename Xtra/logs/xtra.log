@@ -1503,3 +1503,53 @@ INFO 2020-04-21 12:32:57,333 basehttp 124 "GET /userbackups/ HTTP/1.1" 200 74
 INFO 2020-04-21 12:32:57,348 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
 INFO 2020-04-21 12:32:57,760 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
 WARNING 2020-04-21 12:32:57,819 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:59:55,373 basehttp 124 "GET / HTTP/1.1" 200 1751
+WARNING 2020-04-21 12:59:55,459 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:59:57,233 basehttp 124 "GET /backup/ HTTP/1.1" 200 2351
+WARNING 2020-04-21 12:59:57,301 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:59:57,337 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+ERROR 2020-04-21 13:00:01,051 exception 135 Internal Server Error: /backup/
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/xtra/Xtra/Xtra/apps/contents/views.py", line 230, in post
+    db = DatabaseInfo.objects.get(title=userdb)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/query.py", line 384, in get
+    (self.model._meta.object_name, num)
+contents.models.MultipleObjectsReturned: get() returned more than one DatabaseInfo -- it returned 2!
+ERROR 2020-04-21 13:00:01,212 basehttp 124 "POST /backup/ HTTP/1.1" 500 100510
+INFO 2020-04-21 13:01:09,870 basehttp 124 "GET /backup/ HTTP/1.1" 200 2351
+INFO 2020-04-21 13:01:09,977 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+WARNING 2020-04-21 13:01:09,991 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:01:18,884 basehttp 124 "POST /backup/ HTTP/1.1" 200 2411
+INFO 2020-04-21 13:01:18,962 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+WARNING 2020-04-21 13:01:18,983 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:01:22,419 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 13:01:22,469 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:01:23,438 basehttp 124 "GET / HTTP/1.1" 200 2469
+WARNING 2020-04-21 13:01:23,503 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:06:18,544 basehttp 124 "GET / HTTP/1.1" 200 2164
+WARNING 2020-04-21 13:06:18,608 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:06:28,885 basehttp 124 "GET / HTTP/1.1" 200 2151
+WARNING 2020-04-21 13:06:28,944 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:11:21,868 basehttp 124 "GET / HTTP/1.1" 200 2188
+WARNING 2020-04-21 13:11:21,935 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:11:46,640 basehttp 124 "GET / HTTP/1.1" 200 2188
+WARNING 2020-04-21 13:11:46,695 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:11:50,826 basehttp 124 "GET /backup/ HTTP/1.1" 200 2351
+WARNING 2020-04-21 13:11:50,883 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 13:11:50,947 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+INFO 2020-04-21 13:11:52,059 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 13:11:52,103 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661

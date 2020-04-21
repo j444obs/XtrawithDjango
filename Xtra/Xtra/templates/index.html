@@ -45,10 +45,15 @@
         <ul class="site_list">
             <li><span>BackupId：</span><b>{{ backup.order_id }}</b></li>
             <li><span>CreateTime：</span><b>{{ backup.create_time }}</b></li>
-            <li><span>HostIp：</span><b>{{ backup.host_ip }}</b></li>
-            <li><span>DbUser：</span><b>{{ backup.dbuser }}</b></li>
-            <li><span>Db_port：</span><b>{{ backup.dbport }}</b></li>
-            <li><span>Status：</span><b>{{ backup.status }}</b></li>
+            <li><span>HostIp：</span><b>{{ backup.db.title }}</b></li>
+{#            <li><span>DbUser：</span><b>{{ backup.dbuser }}</b></li>#}
+{#            <li><span>Db_port：</span><b>{{ backup.dbport }}</b></li>#}
+            {% if backup.status == 0 %}
+                <li><span>Status：</span><b>SUCCESS</b></li>
+                {% else %}
+                <li><span>Status：</span><b>FAILED</b></li>
+            {% endif %} 
+{#            <li><span>Status：</span><b>{{ backup.status }}</b></li>#}
             <li><span>Filename：</span><b>{{ backup.filename }}</b></li>
         </ul>
         {% endfor %}

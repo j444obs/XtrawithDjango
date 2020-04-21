@@ -227,7 +227,7 @@ class BackupView(LoginRequiredMixin, View):
         username = request.COOKIES.get('username')
         user = User.objects.get(username=username)
         userdb = request.POST.get('userdb')
-        db = DatabaseInfo.objects.get(title=userdb)
+        db = DatabaseInfo.objects.get(title=userdb, user=user)
         # HostIP = request.POST.get('HostIP')
         HostIP = db.host_ip
         # dbuser = request.POST.get('username')
