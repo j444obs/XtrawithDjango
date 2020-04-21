@@ -190,6 +190,7 @@ http://47.100.98.161/
                   + " --port=" + port \
                   + " --incremental /tmp/xtra_test/" \
                   + " --incremental-basedir=/tmp/xtra_test/" \
+                  + filename + "/"
 
 ```
 
