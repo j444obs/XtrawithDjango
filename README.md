@@ -200,11 +200,11 @@ http://47.100.98.161/
 ### 2. 登录
 ![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/login.png)
 ### 3. 首页介绍
-![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/desc.png)
+![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/databases.png)
 ### 4. 全量备份
-![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/fullbackup.png)
+![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/full.png)
 ### 5. 查询备份
-![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/show.png)
+![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/bks.png)
 ### 6. 增量备份
 ![image](https://github.com/wuyangdevops/XtrawithDjango/blob/master/Pic/incre.png)
 
