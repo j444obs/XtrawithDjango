@@ -6,13 +6,20 @@ from django.urls import reverse
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django import http
-import re
+import re, json, logging
 import subprocess
 
-from contents.models import BackupInfo
+from contents.models import BackupInfo, DatabaseInfo
 from users.models import User
+from Xtra.utils.views import LoginRequiredJSONMixin
+from Xtra.utils.response_code import RETCODE
+from contents import constants
 
 # Create your views here.
+
+
+# 创建日志输出器
+logger = logging.getLogger('django')
 
 
 class IndexView(LoginRequiredMixin, View):
@@ -37,6 +44,177 @@ class IndexView(LoginRequiredMixin, View):
         return render(request, "index.html", context)
 
 
+class DatabaseView(LoginRequiredMixin, View):
+    """用户数据库"""
+
+    def get(self, request):
+        """查询并展示用户数据库信息"""
+
+        # 获取当前登陆用户对象
+        login_user = request.user
+        # 使用当前登陆用户和is_deleted=False作为条件查询地址数据
+        databaseinfos = DatabaseInfo.objects.filter(user=login_user, is_deleted=False)
+
+        # 将用户数据库模型列表转字典列表：因为Vue.js不认识模型列表，只有Django和Jinja2模板引擎认识
+        database_list = []
+        for databaseinfo in databaseinfos:
+            database_dict = {
+                "id": databaseinfo.id,
+                "title": databaseinfo.title,
+                'host_ip': databaseinfo.host_ip,
+                'dbuser': databaseinfo.dbuser,
+                'dbpassword': databaseinfo.dbpassword,
+                'dbport': databaseinfo.dbport
+            }
+            database_list.append(database_dict)
+
+        # 构造上下文
+        context = {
+
+            'userdatabases': database_list,
+        }
+
+        return render(request, 'user_center_site.html', context)
+
+
+class UpdateTitleDatabaseView(LoginRequiredJSONMixin, View):
+    """更新地址标题"""
+
+    def put(self, request, database_id):
+        """实现更新地址标题逻辑"""
+        # 接收参数：title
+        json_dict = json.loads(request.body.decode())
+        title = json_dict.get('title')
+
+        # 校验参数
+        if not title:
+            return http.HttpResponseForbidden('缺少title')
+
+        try:
+            # 查询当前要更新标题的地址信息
+            databaseinfo = DatabaseInfo.objects.get(id=database_id)
+            # 将新的地址标题覆盖地址标题
+            databaseinfo.title = title
+            databaseinfo.save()
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '更新标题失败'})
+            # 响应结果
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '更新标题成功'})
+
+
+class UpdateDestroyDatabaseView(LoginRequiredJSONMixin, View):
+    """更新和删除用户数据库"""
+
+    def put(self, request, database_id):
+        """修改用户数据库"""
+        # 接收参数
+        json_dict = json.loads(request.body.decode())
+        host_ip = json_dict.get('host_ip')
+        dbuser = json_dict.get('dbuser')
+        dbpassword = json_dict.get('dbpassword')
+        dbport = json_dict.get('dbport')
+
+
+        # 校验参数
+        if not all([host_ip, dbuser, dbpassword, dbport]):
+            return http.HttpResponseForbidden('缺少必传参数')
+        # if not re.match(r'^1[3-9]\d{9}$', mobile):
+        #     return http.HttpResponseForbidden('参数mobile有误')
+
+        # 使用最新的用户数据库信息覆盖旧信息
+        try:
+            DatabaseInfo.objects.filter(id=database_id).update(
+                user=request.user,
+                host_ip=host_ip,
+                dbuser=dbuser,
+                dbpassword=dbpassword,
+                dbport=dbport,
+            )
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '修改用户数据库失败'})
+
+        # 响应新的地址信息给前端渲染
+        databaseinfo = DatabaseInfo.objects.get(id=database_id)
+        database_dict = {
+            "id": databaseinfo.id,
+            "title": databaseinfo.title,
+            "host_ip": databaseinfo.host_ip,
+            "dbuser": databaseinfo.dbuser,
+            "dbpassword": databaseinfo.dbpassword,
+            "dbport": databaseinfo.dbport,
+        }
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '修改数据库成功', 'database': database_dict})
+
+    def delete(self, request, database_id):
+        """删除用户数据库"""
+        # 实现指定地址的逻辑删除：is_delete=True
+        try:
+            databaseinfo = DatabaseInfo.objects.get(id=database_id)
+            databaseinfo.is_deleted = True
+            databaseinfo.save()
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '删除用户数据库失败'})
+        # 响应结果：code, errmsg
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '删除用户数据库成功'})
+
+
+class DatabaseCreateView(LoginRequiredJSONMixin, View):
+    """新增用户数据库"""
+
+    def post(self, request):
+        """实现新增用户数据库逻辑"""
+
+        # 判断用户数据库数量是否超过上限：查询当前登陆用户的用户数据库数量
+        # count = Address.objects.filter(user=request.user).count()
+        # 语法1： 一对应的模型类对象.多对应的模型类名小写_set
+        count = request.user.databaseinfo_set.filter(is_deleted=False).count()
+        # count = request.user.addresses.count()  # 语法2：一查多，使用related_name查询
+
+        if count > constants.USER_ADDRESS_COUNTS_LIMIT:
+            return http.JsonResponse({'code': RETCODE.THROTTLINGERR, 'errmsg':
+                                      '超出用户数据库的上限'})
+
+        # 接收参数
+        json_dict = json.loads(request.body.decode())
+        host_ip = json_dict.get('host_ip')
+        dbuser = json_dict.get('dbuser')
+        dbpassword = json_dict.get('dbpassword')
+        dbport = json_dict.get('dbport')
+
+        # 校验参数
+        if not all([host_ip, dbuser, dbpassword, dbport]):
+            return http.HttpResponseForbidden('缺少必传参数')
+        # if not re.match(r'^1[3-9]\d{9}$', mobile):
+        #     return http.HttpResponseForbidden('参数mobile有误')
+
+        # 保存用户传入的数据库信息
+        try:
+            databaseinfo = DatabaseInfo.objects.create(
+                user=request.user,
+                host_ip=host_ip,   # 标题默认就是IP
+                dbuser=dbuser,
+                dbpassword=dbpassword,
+                dbport=dbport,
+            )
+
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增用户数据库失败'})
+
+        # 响应新增地址结果：需要将新增的地址返回给前端渲染
+        database_dict = {
+            "id": databaseinfo.id,
+            "host_ip": databaseinfo.host_ip,
+            "dbuser": databaseinfo.dbuser,
+            "dbpassword": databaseinfo.dbpassword,
+            "dbport": databaseinfo.dbport
+        }
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '新增数据库成功', 'database': database_dict})
+
+
 class BackupView(LoginRequiredMixin, View):
 
     def get(self, request):
@@ -48,10 +226,16 @@ class BackupView(LoginRequiredMixin, View):
         # 接收参数
         username = request.COOKIES.get('username')
         user = User.objects.get(username=username)
-        HostIP = request.POST.get('HostIP')
-        dbuser = request.POST.get('username')
-        password = request.POST.get('password')
-        port = request.POST.get('port')
+        userdb = request.POST.get('userdb')
+        db = DatabaseInfo.objects.get(title=userdb)
+        # HostIP = request.POST.get('HostIP')
+        HostIP = db.host_ip
+        # dbuser = request.POST.get('username')
+        dbuser = db.dbuser
+        # password = request.POST.get('password')
+        password = db.dbpassword
+        # port = request.POST.get('port')
+        port = db.dbport
         allow = request.POST.get('allow')
 
         # 校验参数: 前后端的校验需要分开，避免恶意用户越过前端逻辑发送请求，要保证后端安全，前后端的校验逻辑相同
@@ -87,10 +271,7 @@ class BackupView(LoginRequiredMixin, View):
 
             backup = BackupInfo.objects.create(order_id=order_id,
                                                user=user,
-                                               host_ip=HostIP,
-                                               dbuser=dbuser,
-                                               dbport=port,
-                                               dbpassword=password,
+                                               db=db,
                                                status=retcode,
                                                filename=res1)
 
@@ -117,14 +298,28 @@ class IncreView(LoginRequiredMixin, View):
     def post(self, request):
         """实现用户注册业务逻辑"""
         # 接收参数
+        # username = request.COOKIES.get('username')
+        # user = User.objects.get(username=username)
+        # HostIP = request.POST.get('HostIP')
+        # dbuser = request.POST.get('username')
+        # password = request.POST.get('password')
+        # port = request.POST.get('port')
+        # allow = request.POST.get('allow')
         username = request.COOKIES.get('username')
         user = User.objects.get(username=username)
-        HostIP = request.POST.get('HostIP')
-        dbuser = request.POST.get('username')
-        password = request.POST.get('password')
-        port = request.POST.get('port')
+        userdb = request.POST.get('userdb')
+        db = DatabaseInfo.objects.get(title=userdb)
+        # HostIP = request.POST.get('HostIP')
+        HostIP = db.host_ip
+        # dbuser = request.POST.get('username')
+        dbuser = db.dbuser
+        # password = request.POST.get('password')
+        password = db.dbpassword
+        # port = request.POST.get('port')
+        port = db.dbport
         allow = request.POST.get('allow')
-        filename = request.POST.get('filename')
+        filename = request.POST.get('userbk')
+
 
         # 校验参数: 前后端的校验需要分开，避免恶意用户越过前端逻辑发送请求，要保证后端安全，前后端的校验逻辑相同
         # 判断参数是否齐全
@@ -162,12 +357,17 @@ class IncreView(LoginRequiredMixin, View):
         (retcode1, res1) = subprocess.getstatusoutput(command1)
         order_id = timezone.localtime().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
         try:
+            # backup = BackupInfo.objects.create(order_id=order_id,
+            #                                    user=user,
+            #                                    host_ip=HostIP,
+            #                                    dbuser=dbuser,
+            #                                    dbport=port,
+            #                                    dbpassword=password,
+            #                                    status=retcode,
+            #                                    filename=res1)
             backup = BackupInfo.objects.create(order_id=order_id,
                                                user=user,
-                                               host_ip=HostIP,
-                                               dbuser=dbuser,
-                                               dbport=port,
-                                               dbpassword=password,
+                                               db=db,
                                                status=retcode,
                                                filename=res1)
 
@@ -183,3 +383,57 @@ class IncreView(LoginRequiredMixin, View):
         response = redirect(reverse('contents:index'))
 
         return response
+
+
+class UserDatabaseView(LoginRequiredMixin, View):
+    """用户数据库"""
+
+    def get(self, request):
+        """查询并展示用户数据库信息"""
+
+        # 获取当前登陆用户对象
+        login_user = request.user
+        databaseinfos = DatabaseInfo.objects.filter(user=login_user, is_deleted=False)
+
+        # 将用户数据库模型列表转字典列表：因为Vue.js不认识模型列表，只有Django和Jinja2模板引擎认识
+        database_list = []
+        for databaseinfo in databaseinfos:
+            database_dict = {
+                # "id": databaseinfo.id,
+                "title": databaseinfo.title,
+                # 'host_ip': databaseinfo.host_ip,
+                # 'dbuser': databaseinfo.dbuser,
+                # 'dbpassword': databaseinfo.dbpassword,
+                # 'dbport': databaseinfo.dbport
+            }
+            database_list.append(database_dict)
+
+        # 构造上下文
+        # context = {
+        #
+        #     'userdatabases': database_list,
+        # }
+
+        # return render(request, 'user_center_site.html', context)
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '查询成功', 'userdatabases': database_list})
+
+
+class UserFileView(LoginRequiredMixin, View):
+    """用户备份"""
+
+    def get(self, request):
+        """查询并展示用户备份信息"""
+
+        # 获取当前登陆用户对象
+        login_user = request.user
+        backupinfos = BackupInfo.objects.filter(user=login_user)
+
+        file_list = []
+        for backupinfo in backupinfos:
+            file_dict = {
+                "filename": backupinfo.filename,
+            }
+            file_list.append(file_dict)
+
+        # return render(request, 'user_center_site.html', context)
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '查询成功', 'userbackupinfos': file_list})

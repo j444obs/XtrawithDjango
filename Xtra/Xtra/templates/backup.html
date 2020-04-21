@@ -30,32 +30,40 @@
 					<!-- {{ csrf_input }} 会生成隐藏input标签 -->
                     {{ csrf_input }}
 					<ul>
-						<li>
-							<!-- 接收数据 v-model -->
-							<!-- 鼠标失去焦点事件@blur -->
-							<!-- 展示错误：v-show -->
-							<label>HostIP:</label>
-							<input type="text" v-model="HostIP" @blur="check_HostIP" name="HostIP" id="Host_IP">
-							<span class="error_tip" v-show="error_ip">Please enter the corrent IP</span>
-						</li>
-                        <li>
-							<label>DBUser:</label>
-							<input type="text" v-model="username" @blur="check_username" name="username" id="user_name">
-							<span class="error_tip" v-show="error_name">Please enter DB user name</span>
-						</li>
-                        <li>
-							<label>DBPassword:</label>
-							<input type="password" v-model="password" @blur="check_password" name="password" id="pwd">
-							<span class="error_tip" v-show="error_password">please enter the correct password</span>
-						</li>
-						<li>
-							<label>DBPort:</label>
-							<input type="text" v-model="port" @blur="check_port" name="port" id="port">
-							<span class="error_tip" v-show="error_port">Please enter the correct port</span>
-						</li>
+{#						<li>#}
+{#							<!-- 接收数据 v-model -->#}
+{#							<!-- 鼠标失去焦点事件@blur -->#}
+{#							<!-- 展示错误：v-show -->#}
+{#							<label>HostIP:</label>#}
+{#							<input type="text" v-model="HostIP" @blur="check_HostIP" name="HostIP" id="Host_IP">#}
+{#							<span class="error_tip" v-show="error_ip">Please enter the corrent IP</span>#}
+{#						</li>#}
+{#                        <li>#}
+{#							<label>DBUser:</label>#}
+{#							<input type="text" v-model="username" @blur="check_username" name="username" id="user_name">#}
+{#							<span class="error_tip" v-show="error_name">Please enter DB user name</span>#}
+{#						</li>#}
+{#                        <li>#}
+{#							<label>DBPassword:</label>#}
+{#							<input type="password" v-model="password" @blur="check_password" name="password" id="pwd">#}
+{#							<span class="error_tip" v-show="error_password">please enter the correct password</span>#}
+{#						</li>#}
+{#						<li>#}
+{#							<label>DBPort:</label>#}
+{#							<input type="text" v-model="port" @blur="check_port" name="port" id="port">#}
+{#							<span class="error_tip" v-show="error_port">Please enter the correct port</span>#}
+{#						</li>#}
+{#                        <div class="form_group">#}
+                    <label>*用户数据库：</label>
+                    <select name="userdb">
+                        <option v-for="userdatabase in userdatabases">[[ userdatabase.title ]]</option>
+                    </select>
+
+{#                </div>#}
 
 						<li class="agreement">
 							<input type="checkbox" v-model="allow" @change="check_allow" name="allow" id="allow">
+{#                        <input type="checkbox" @change="check_allow" name="allow" id="allow">#}
 							<label>Accept the usage agreement</label>
 							<span class="error_tip" v-show="error_allow">Please tick the usage agreement</span>
 							{% if backup_errmsg %}

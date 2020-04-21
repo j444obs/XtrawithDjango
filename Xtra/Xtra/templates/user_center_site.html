@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>WebXtra</title>
+	<link rel="stylesheet" type="text/css" href="{{ static('css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ static('css/main.css') }}">
+    <script type="text/javascript" src="{{ static('js/vue-2.5.16.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/axios-0.18.0.min.js') }}"></script>
+</head>
+<body>
+	<div id="app">
+	<div class="header_con">
+		<div class="header" v-cloak>
+			<div class="welcome fl">Welcome to XtrawithDjango!</div>
+			<div class="fr">
+                <div v-if="username" class="login_btn fl">
+                    欢迎您：<em>[[ username ]]</em>
+                    <span>|</span>
+                    <a href="{{ url('users:logout') }}">退出</a>
+                </div>
+                <div v-else class="login_btn fl">
+                    <a href="{{ url('users:login') }}">登录</a>
+                    <span>|</span>
+                    <a href="{{ url('users:register') }}">注册</a>
+                </div>
+				<div class="user_link fl">
+					<span>|</span>
+{#					<a href="{{ url('users:info') }}">用户中心</a>#}
+					<span>|</span>
+{#					<a href="{{ url('carts:info') }}">我的购物车</a>#}
+					<span>|</span>
+{#					<a href="user_center_order.html">我的订单</a>#}
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>用户中心</h3>
+			<ul>
+				<li><a href="{{ url('contents:index') }}">·备份信息</a></li>
+				<li><a href="{{ url('contents:databases') }}" >· 数据库信息</a></li>
+                <li><a href="{{ url('contents:backup') }}" >· 全量备份</a></li>
+                <li><a href="{{ url('contents:incre') }}" >· 增量备份</a></li>
+{#				<li><a href="user_center_pass.html">· 修改密码</a></li>#}
+			</ul>
+		</div>
+	<div class="right_content clearfix" v-cloak>
+    <div class="site_top_con">
+        <a @click="show_add_site">新增用户数据库</a>
+        <span>你已添加了<b>[[ userdatabases.length ]]</b>个用户数据库，最多可添加<b>20</b>个</span>
+    </div>
+    <div class="site_con" v-for="(userdatabase, index) in userdatabases">
+        <div class="site_title">
+            <div v-if="edit_title_index===index">
+                <input v-model="new_title" type="text" name="">
+                <input @click="save_title(index)" type="button" name="" value="保 存">
+                <input @click="cancel_title(index)" type="reset" name="" value="取 消">
+            </div>
+            <div>
+                <h3>[[ userdatabase.title ]]</h3>
+                <a @click="show_edit_title(index)" class="edit_title"></a>
+            </div>
+{#            <em v-if="address.id===default_address_id">默认地址</em>#}
+            <span @click="delete_database(index)">×</span>
+        </div>
+        <ul class="site_list">
+            <li><span>数据库名称：</span><b>[[ userdatabase.title ]]</b></li>
+            <li><span>服务器IP：</span><b>[[ userdatabase.host_ip ]]</b></li>
+            <li><span>数据库用户：</span><b>[[ userdatabase.dbuser ]]</b></li>
+            <li><span>数据库密码：</span><b>[[ userdatabase.dbpassword ]]</b></li>
+            <li><span>数据库端口：</span><b>[[ userdatabase.dbport ]]</b></li>
+
+        </ul>
+        <div class="down_btn">
+{#            <a v-if="address.id!=default_address_id" @click="set_default(index)">设为默认</a>#}
+            <a @click="show_edit_site(index)" class="edit_icon">编辑</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+	<div class="pop_con" v-show="is_show_edit" v-cloak>
+		<div class="site_con site_pop">
+            <div class="site_pop_title">
+                <h3 v-if="editing_database_index">编辑用户数据库</h3>
+                <h3 v-else>新增用户数据库</h3>
+                <a @click="is_show_edit=false">×</a>
+            </div>
+            <form>
+{#                <div class="form_group">#}
+{#                    <label>*数据库名称：</label>#}
+{#                    <input v-model="form_databases.receiver" @blur="check_receiver" type="text" class="receiver">#}
+{#                    <span v-show="error_receiver" class="receiver_error">请填写收件人</span>#}
+{#                </div>#}
+
+                <div class="form_group">
+                    <label>*服务器IP：</label>
+                    <input v-model="form_databases.host_ip" @blur="check_host_ip" type="text" class="receiver">
+                    <span v-show="error_host_ip" class="receiver_error">请填写服务器IP</span>
+                </div>
+                <div class="form_group">
+                    <label>*数据库用户：</label>
+                    <input v-model="form_databases.dbuser" @blur="check_dbuser" type="text" class="receiver">
+                    <span v-show="error_dbuser" class="receiver_error">请填写数据库用户</span>
+                </div>
+                <div class="form_group">
+                    <label>*数据库密码：</label>
+                    <input v-model="form_databases.dbpassword" @blur="check_dbpassword" type="text" class="receiver">
+                    <span v-show="error_dbpassword" class="receiver_error">请填写数据库密码</span>
+                </div>
+                <div class="form_group">
+                    <label>*数据库端口：</label>
+                    <input v-model="form_databases.dbport" @blur="check_dbport" type="text" class="receiver">
+                    <span v-show="error_dbport" class="receiver_error">请填写数据库端口</span>
+                </div>
+                <input @click="save_database" type="button" name="" value="新 增" class="info_submit">
+                <input @click="is_show_edit=false" type="reset" name="" value="取 消" class="info_submit info_reset">
+            </form>
+		</div>
+		<div class="mask"></div>
+	</div>
+	</div>
+	<script type="text/javascript">
+		let userdatabases = {{ userdatabases | safe }};
+
+    </script>
+	<script type="text/javascript" src="{{ static('js/common.js') }}"></script>
+	<script type="text/javascript" src="{{ static('js/user_center_site.js') }}"></script>
+</body>
+</html>

@@ -72,7 +72,7 @@ class RegisterView(View):
         login(request, user)
 
         # 响应结果：重定向到首页
-        response = redirect(reverse('contents:index'))
+        response = redirect(reverse('contents:databases'))
 
         # 为了实现在首页的右上角展示用户名信息，我们需要将用户名缓存到cookie中
         # response.set_cookie('key', 'value', 'expiry')
@@ -129,7 +129,7 @@ class LoginView(View):
             response = redirect(next)
         else:
             # 重定向到首页
-            response = redirect(reverse('contents:index'))
+            response = redirect(reverse('contents:databases'))
 
         # 为了实现在首页的右上角展示用户名信息，我们需要将用户名缓存到cookie中
         # response.set_cookie('key', 'value', 'expiry')
@@ -147,7 +147,7 @@ class LogoutView(View):
         logout(request)
 
         # 退出登陆后重定向到首页
-        response = redirect(reverse('contents:index'))
+        response = redirect(reverse('contents:databases'))
 
         # 删除cookie中的用户名
         response.delete_cookie('username')

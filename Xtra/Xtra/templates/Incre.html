@@ -30,34 +30,45 @@
 					<!-- {{ csrf_input }} 会生成隐藏input标签 -->
                     {{ csrf_input }}
 					<ul>
-						<li>
-							<!-- 接收数据 v-model -->
-							<!-- 鼠标失去焦点事件@blur -->
-							<!-- 展示错误：v-show -->
-							<label>HostIP:</label>
-							<input type="text" v-model="HostIP" @blur="check_HostIP" name="HostIP" id="Host_IP">
-							<span class="error_tip" v-show="error_ip">Please enter the corrent IP</span>
-						</li>
-                        <li>
-							<label>DBUser:</label>
-							<input type="text" v-model="username" @blur="check_username" name="username" id="user_name">
-							<span class="error_tip" v-show="error_name">Please enter DB user name</span>
-						</li>
-                        <li>
-							<label>DBPassword:</label>
-							<input type="password" v-model="password" @blur="check_password" name="password" id="pwd">
-							<span class="error_tip" v-show="error_password">please enter the correct password</span>
-						</li>
-						<li>
-							<label>DBPort:</label>
-							<input type="text" v-model="port" @blur="check_port" name="port" id="port">
-							<span class="error_tip" v-show="error_port">Please enter the correct port</span>
-						</li>
-                        <li>
-							<label>Base File:</label>
-							<input type="text" v-model="filename" @blur="check_file" name="filename" id="filename">
-							<span class="error_tip" v-show="error_filename">Please enter the correct filename</span>
-						</li>
+{#						<li>#}
+{#							<!-- 接收数据 v-model -->#}
+{#							<!-- 鼠标失去焦点事件@blur -->#}
+{#							<!-- 展示错误：v-show -->#}
+{#							<label>HostIP:</label>#}
+{#							<input type="text" v-model="HostIP" @blur="check_HostIP" name="HostIP" id="Host_IP">#}
+{#							<span class="error_tip" v-show="error_ip">Please enter the corrent IP</span>#}
+{#						</li>#}
+{#                        <li>#}
+{#							<label>DBUser:</label>#}
+{#							<input type="text" v-model="username" @blur="check_username" name="username" id="user_name">#}
+{#							<span class="error_tip" v-show="error_name">Please enter DB user name</span>#}
+{#						</li>#}
+{#                        <li>#}
+{#							<label>DBPassword:</label>#}
+{#							<input type="password" v-model="password" @blur="check_password" name="password" id="pwd">#}
+{#							<span class="error_tip" v-show="error_password">please enter the correct password</span>#}
+{#						</li>#}
+{#						<li>#}
+{#							<label>DBPort:</label>#}
+{#							<input type="text" v-model="port" @blur="check_port" name="port" id="port">#}
+{#							<span class="error_tip" v-show="error_port">Please enter the correct port</span>#}
+{#						</li>#}
+{#                        <li>#}
+{#							<label>Base File:</label>#}
+{#							<input type="text" v-model="filename" @blur="check_file" name="filename" id="filename">#}
+{#							<span class="error_tip" v-show="error_filename">Please enter the correct filename</span>#}
+{#						</li>#}
+                                        <label>*用户数据库：</label>
+                    <select name="userdb">
+                        <option v-for="userdatabase in userdatabases">[[ userdatabase.title ]]</option>
+                    </select>
+
+                    <br><br>
+
+                                        <label>*增量基准文件：</label>
+                    <select name="userbk">
+                        <option v-for="userbackupinfo in userbackupinfos">[[ userbackupinfo.filename ]]</option>
+                    </select>
 
 						<li class="agreement">
 							<input type="checkbox" v-model="allow" @change="check_allow" name="allow" id="allow">
