@@ -1331,3 +1331,175 @@ INFO 2020-04-21 00:48:11,204 basehttp 124 "GET /userbackups/ HTTP/1.1" 200 294
 WARNING 2020-04-21 00:48:12,517 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
 INFO 2020-04-21 00:48:29,051 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
 WARNING 2020-04-21 00:48:29,128 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 01:01:10,228 basehttp 124 "GET /register/ HTTP/1.1" 200 3436
+INFO 2020-04-21 01:01:10,241 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 5114
+WARNING 2020-04-21 01:01:10,305 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 01:01:10,336 basehttp 124 "GET /image_codes/40e20369-7047-4f7d-bcd7-ebcbcd6238f5/ HTTP/1.1" 200 3294
+INFO 2020-04-21 01:01:15,831 basehttp 124 "GET /usernames/wanghao/count HTTP/1.1" 200 41
+INFO 2020-04-21 01:01:24,048 basehttp 124 "GET /usernames/chenhao/count HTTP/1.1" 200 41
+INFO 2020-04-21 01:01:30,887 basehttp 124 "GET /image_codes/1fba8ff1-7d05-4c84-8a8b-a9b363039db4/ HTTP/1.1" 200 3892
+WARNING 2020-04-21 01:01:36,692 base 152 Not Found: /check_image_codes/rw4m&uuid=1fba8ff1-7d05-4c84-8a8b-a9b363039db4
+WARNING 2020-04-21 01:01:36,695 basehttp 124 "GET /check_image_codes/rw4m&uuid=1fba8ff1-7d05-4c84-8a8b-a9b363039db4 HTTP/1.1" 404 4796
+INFO 2020-04-21 01:01:36,707 basehttp 124 "GET /usernames/chenhao/count HTTP/1.1" 200 41
+INFO 2020-04-21 01:01:36,782 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2020-04-21 01:01:36,806 basehttp 124 "GET /databases/ HTTP/1.1" 200 5438
+WARNING 2020-04-21 01:01:36,869 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 01:12:13,036 basehttp 124 "GET /databases/ HTTP/1.1" 200 5438
+WARNING 2020-04-21 01:12:13,090 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:26:19,701 basehttp 124 "GET /databases/ HTTP/1.1" 200 5438
+INFO 2020-04-21 12:26:19,744 basehttp 124 "GET /static/js/user_center_site.js HTTP/1.1" 304 0
+WARNING 2020-04-21 12:26:19,789 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:26:37,097 basehttp 124 "POST /databases/create/ HTTP/1.1" 200 176
+INFO 2020-04-21 12:26:42,773 basehttp 124 "PUT /databases/4/title/ HTTP/1.1" 200 63
+ERROR 2020-04-21 12:26:49,236 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/xtra/Xtra/Xtra/apps/contents/views.py", line 34, in get
+    user = User.objects.get(username=username)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+ERROR 2020-04-21 12:26:49,407 basehttp 124 "GET / HTTP/1.1" 500 98368
+ERROR 2020-04-21 12:26:55,722 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/xtra/Xtra/Xtra/apps/contents/views.py", line 34, in get
+    user = User.objects.get(username=username)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+ERROR 2020-04-21 12:26:55,890 basehttp 124 "GET / HTTP/1.1" 500 98504
+ERROR 2020-04-21 12:26:58,171 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wuyang/Desktop/Django_project/xtra/Xtra/Xtra/apps/contents/views.py", line 34, in get
+    user = User.objects.get(username=username)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/wuyang/.virtualenvs/Django_v1/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+ERROR 2020-04-21 12:26:58,330 basehttp 124 "GET / HTTP/1.1" 500 98344
+INFO 2020-04-21 12:27:03,537 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+WARNING 2020-04-21 12:27:03,615 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:09,354 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-04-21 12:27:09,377 basehttp 124 "GET /databases/ HTTP/1.1" 200 5662
+WARNING 2020-04-21 12:27:09,441 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:13,184 basehttp 124 "GET / HTTP/1.1" 200 6049
+WARNING 2020-04-21 12:27:13,240 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:17,364 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-04-21 12:27:17,371 basehttp 124 "GET /databases/ HTTP/1.1" 302 0
+INFO 2020-04-21 12:27:17,382 basehttp 124 "GET /login/?next=/databases/ HTTP/1.1" 200 2346
+WARNING 2020-04-21 12:27:17,441 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:25,208 basehttp 124 "POST /login/?next=/databases/ HTTP/1.1" 200 2467
+WARNING 2020-04-21 12:27:25,291 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:31,616 basehttp 124 "POST /login/?next=/databases/ HTTP/1.1" 200 2467
+WARNING 2020-04-21 12:27:31,693 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:35,573 basehttp 124 "GET /register/ HTTP/1.1" 200 3436
+WARNING 2020-04-21 12:27:35,623 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:35,692 basehttp 124 "GET /image_codes/3e6a3dde-5f66-4468-a295-1e7515c22862/ HTTP/1.1" 200 3304
+INFO 2020-04-21 12:27:42,746 basehttp 124 "GET /usernames/chenhao/count HTTP/1.1" 200 41
+INFO 2020-04-21 12:27:42,824 basehttp 124 "GET /login/ HTTP/1.1" 200 2346
+WARNING 2020-04-21 12:27:42,895 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:51,017 basehttp 124 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-04-21 12:27:51,039 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 12:27:51,095 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:52,851 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:27:52,950 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:54,552 basehttp 124 "GET /incre/ HTTP/1.1" 200 2656
+INFO 2020-04-21 12:27:54,569 basehttp 124 "GET /static/js/Incre.js HTTP/1.1" 304 0
+WARNING 2020-04-21 12:27:54,639 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:54,664 basehttp 124 "GET /userbackups/ HTTP/1.1" 200 74
+INFO 2020-04-21 12:27:54,674 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+WARNING 2020-04-21 12:27:58,934 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:59,616 basehttp 124 "GET /backup/ HTTP/1.1" 200 2341
+INFO 2020-04-21 12:27:59,638 basehttp 124 "GET /static/js/backup.js HTTP/1.1" 304 0
+WARNING 2020-04-21 12:27:59,673 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:27:59,708 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+WARNING 2020-04-21 12:28:02,148 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:03,791 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:28:03,843 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:07,286 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 12:28:07,341 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:15,988 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:28:16,069 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2020-04-21 12:28:22,114 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:23,245 basehttp 124 "GET /backup/ HTTP/1.1" 200 2341
+WARNING 2020-04-21 12:28:23,297 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:23,338 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+WARNING 2020-04-21 12:28:24,813 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:26,486 basehttp 124 "GET /backup/ HTTP/1.1" 200 2341
+WARNING 2020-04-21 12:28:26,527 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:26,574 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+WARNING 2020-04-21 12:28:28,205 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:29,075 basehttp 124 "GET /incre/ HTTP/1.1" 200 2656
+WARNING 2020-04-21 12:28:29,133 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:29,199 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+INFO 2020-04-21 12:28:29,201 basehttp 124 "GET /userbackups/ HTTP/1.1" 200 74
+WARNING 2020-04-21 12:28:30,820 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:57,333 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:28:57,419 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:28:58,838 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:28:58,890 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2020-04-21 12:29:01,910 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:29:02,929 basehttp 124 "GET /backup/ HTTP/1.1" 200 2341
+WARNING 2020-04-21 12:29:03,063 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:29:03,080 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+INFO 2020-04-21 12:29:06,605 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:29:06,689 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2020-04-21 12:29:12,461 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+WARNING 2020-04-21 12:29:13,042 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:31:46,656 basehttp 124 "GET / HTTP/1.1" 200 1741
+WARNING 2020-04-21 12:31:46,713 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:32:50,704 basehttp 124 "GET / HTTP/1.1" 200 1751
+WARNING 2020-04-21 12:32:50,766 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:32:51,748 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 12:32:51,795 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:32:55,172 basehttp 124 "GET /backup/ HTTP/1.1" 200 2351
+WARNING 2020-04-21 12:32:55,230 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:32:55,275 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+INFO 2020-04-21 12:32:55,869 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 12:32:55,920 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:32:57,216 basehttp 124 "GET /incre/ HTTP/1.1" 200 2666
+WARNING 2020-04-21 12:32:57,270 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
+INFO 2020-04-21 12:32:57,333 basehttp 124 "GET /userbackups/ HTTP/1.1" 200 74
+INFO 2020-04-21 12:32:57,348 basehttp 124 "GET /userdatabases/ HTTP/1.1" 200 91
+INFO 2020-04-21 12:32:57,760 basehttp 124 "GET /databases/ HTTP/1.1" 200 5550
+WARNING 2020-04-21 12:32:57,819 basehttp 124 "GET /static/js/axios.min.map HTTP/1.1" 404 1661
